@@ -195,13 +195,13 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
+.container:before,
+.container:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
 
-.clearfix:after {
+.container:after {
     clear: both;
 }
 
@@ -210,7 +210,7 @@ textarea {
  * Include this rule to trigger hasLayout and contain floats.
  */
 
-.clearfix {
+.container {
     *zoom: 1;
 }
 

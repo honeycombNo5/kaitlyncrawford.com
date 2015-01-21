@@ -1,36 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>{{site.title}} | {{title}}</title>
-	<link rel="stylesheet" href="/css/layout.css">
-	<link rel="stylesheet" href="/css/normalize.css">
-	<link rel="stylesheet" href="main.css">
-</head>
-<body>
-<div class="clearfix">
-      <div class="nav-main">
-        <div class="inner-nav">
-           <ul class="menu-pages">
-      			{% for page in site.pages %}
-        			<li>
-        				<a href="{{page.url}}"{% if page.url == url %} class="is-current-page"{% endif %}>{{page.title}}</a>
-        			</li>
-      			{% endfor %}
-      		</ul>
-        </div>
-      </div>
-      <div class="content-main">
-      	<div class="post">
-      		<h1>{{title}}</h1>
-      	<article>{{body}}</article>
-      	</div>
-      </div>
-      <div class="nav-selection">
-      	{% if parent %}
- 			 <p><a href="{{parent.url}}">&larr; Go back</a></p>
-  		{% endif %}
-      </div>
-    </div>  
-</body>
-</html>
+{% capture content %}
+    
+    <div class="body-content">
+
+        {{ body }}
+    
+    </div>
+
+{% endcapture %}
+
+{% include 'layouts/default' %}
