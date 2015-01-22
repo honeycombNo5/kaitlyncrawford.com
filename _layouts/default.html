@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container">
-      <div class="nav-main">
+      <div class="nav-main container">
         <div class="inner-nav">
            <ul class="menu-pages">
       			{% for page in site.pages %}
@@ -20,17 +20,17 @@
       		</ul>
         </div>
       </div>
-      <div class="content-main">
+      <div class="content-main container">
         <div class="container">
 
           {{ content }}
 
         </div>
       </div>
-      <div class="nav-selection">
-      	{% if parent %}
- 			 <p><a href="{{parent.url}}">&larr; Go back</a></p>
-  		{% endif %}
+      <div class="nav-selection container">
+      	  
+        {{ sidebar_content }}
+
       </div>
     </div>  
 </body>

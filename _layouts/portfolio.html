@@ -1,0 +1,15 @@
+{% capture content %}
+    <article class="portfolio-item">
+        <h1>{{ title }}</h1>
+        {{ body }}
+    </article>
+{% endcapture %}
+
+{% capture sidebar_content %}
+    <nav>
+        {% if previous %}<a href="{{ current.previous.url }}">previous</a>{% endif %}
+        {% if next %}<a href="{{ current.next.url }}">next</a>{% endif %}
+    </nav>
+{% endcapture %}
+
+{% include 'layouts/default' %}

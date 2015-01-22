@@ -1,0 +1,13 @@
+{% capture content %}
+
+{% for post in posts limit:20 %}
+<article>
+  <header><a href="{{post.url}}">{{post.title}}</a></header>
+  {{post.exerpt}}
+  <footer>Posted on {{post.date | date: "%b %d, %Y"}} by {{post.author.fullname}}</footer>
+</article>
+{% endfor %}
+
+{% endcapture %}
+
+{% include 'layouts/default' %}
