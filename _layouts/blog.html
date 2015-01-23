@@ -1,14 +1,17 @@
 {% capture content %}
+<div class="post-date">{{post.date | date: "%b %d, %Y"}}</div>
     <article class="blog-post">
-        <h1>{{ title }}</h1>
-        {{ body }}
+        <div class="post-title"><h1>{{ title }}</h1></div>
+        <div class="post-body">{{ body }}</div>
     </article>
 {% endcapture %}
 
 {% capture sidebar_content %}
-    <nav>
-        {% if previous %}<a href="{{ current.previous.url }}">previous</a>{% endif %}
-        {% if next %}<a href="{{ current.next.url }}">next</a>{% endif %}
+    <nav class="post-nav">
+    	<ul>
+       <li> {% if previous %}<a href="{{ current.previous.url }}"><img src="/images/forward_arrow.png" alt=""></a>{% endif %}</li>
+        <li>{% if next %}<a href="{{ current.next.url }}"><img src="/images/back_arrow.png" alt=""></a>{% endif %}</li>
+        </ul>
     </nav>
 {% endcapture %}
 
