@@ -1,6 +1,14 @@
 {% capture content %}
 
 <<<<<<< HEAD
+{% for post in posts limit:20 %}
+<article class="post-preview">
+  <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+  {{post.excerpt}}
+  <footer>Posted on {{post.date | date: "%b %d, %Y"}} by {{post.author.fullname}}</footer>
+</article>
+{% endfor %}
+=======
   {% for post in posts limit: 5 %}
     {% include 'includes/post_preview' %}
   {% endfor %}
@@ -8,15 +16,7 @@
 <!--   <hr>
 
   {% include 'includes/topics' %} -->
-=======
-{% for post in posts limit:20 %}
-<article>
-  <header><a href="{{post.url}}">{{post.title}}</a></header>
-  {{post.exerpt}}
-  <footer>Posted on {{post.date | date: "%b %d, %Y"}} by {{post.author.fullname}}</footer>
-</article>
-{% endfor %}
->>>>>>> parent of 32b5625... Before adjusting post preview
+>>>>>>> parent of 483759f... Revert "Before adjusting post preview"
 
 {% endcapture %}
 
