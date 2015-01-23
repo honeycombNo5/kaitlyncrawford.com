@@ -2,10 +2,12 @@
 @import "variables";
 @import "neat/neat";
 
+//MOBILE BREAKPOINTS
+
 $mobile: new-breakpoint(max-width 480px);
-$desktop: new-breakpoint(min-width 850px);
+$desktop: new-breakpoint(min-width 974px);
 
-
+//RESPONSIVE BASE GRID
 
 .wrapper {
 	@include outer-container;
@@ -30,32 +32,57 @@ $desktop: new-breakpoint(min-width 850px);
 }
 
 
-//VERTICAL NAV
+//RESPONSIVE MAIN NAV
 
 .inner-nav {
 	min-width: 160px;
-	margin-top: 50px;
-	display: block;
-	overflow: hidden;
-	text-align: right;
 	border: solid 1px black;
+	display: block;
+	text-align: center;
+	//overflow: hidden;
+		@include media($desktop) {
+			text-align: right;
+			margin-top: 150px;
+		}
+	ul {
+		position: relative;
 	
-	 ul li {
+	  li {
 		display: inline-block;
 		margin: 0 1% 0 1%;
-		padding: 0 0 0 0px;
-		font-size: 1.5em;
+		font-size: 2.5em;
 		line-height: .95em;
 		font-family: 'Abril Fatface', cursive;
 		color: #231F20;
-
-		a {
+			@include media($desktop) {
+				margin-left: -50px;
+				display: block;
+			}
+			a {
 			text-decoration: none;
-		}
+			}
 
-		a:visited {
+			a:visited {
 			text-decoration: none;
 			color: #231F20;
+			}
 		}
 	}
+}	
+
+//SIDEBAR CONTENT
+
+//SIDEBAR NAV
+
+.post-nav ul {
+	margin: auto;
+	display: block;
+	text-align: center;
+		@include media($desktop) {
+			margin-top: 200px;
+		}
+	li {
+		list-style-type: none;
+	}
 }		
+

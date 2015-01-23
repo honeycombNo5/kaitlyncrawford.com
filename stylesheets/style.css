@@ -35,7 +35,7 @@ body:before {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 974px) {
     .wrapper .nav-main {
       float: left;
       display: block;
@@ -43,7 +43,7 @@ body:before {
       width: 14.70196%; }
       .wrapper .nav-main:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 974px) {
     .wrapper .content-main {
       float: left;
       display: block;
@@ -51,7 +51,7 @@ body:before {
       width: 74.41059%; }
       .wrapper .content-main:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 974px) {
     .wrapper .nav-selection {
       float: left;
       display: block;
@@ -62,23 +62,40 @@ body:before {
 
 .inner-nav {
   min-width: 160px;
-  margin-top: 50px;
+  border: solid 1px black;
   display: block;
-  overflow: hidden;
-  text-align: right;
-  border: solid 1px black; }
-  .inner-nav ul li {
-    display: inline-block;
-    margin: 0 1% 0 1%;
-    padding: 0 0 0 0px;
-    font-size: 1.5em;
-    line-height: .95em;
-    font-family: 'Abril Fatface', cursive;
-    color: #231F20; }
-    .inner-nav ul li a {
-      text-decoration: none; }
-    .inner-nav ul li a:visited {
-      text-decoration: none;
+  text-align: center; }
+  @media screen and (min-width: 974px) {
+    .inner-nav {
+      text-align: right;
+      margin-top: 150px; } }
+  .inner-nav ul {
+    position: relative; }
+    .inner-nav ul li {
+      display: inline-block;
+      margin: 0 1% 0 1%;
+      font-size: 2.5em;
+      line-height: .95em;
+      font-family: 'Abril Fatface', cursive;
       color: #231F20; }
+      @media screen and (min-width: 974px) {
+        .inner-nav ul li {
+          margin-left: -50px;
+          display: block; } }
+      .inner-nav ul li a {
+        text-decoration: none; }
+      .inner-nav ul li a:visited {
+        text-decoration: none;
+        color: #231F20; }
+
+.post-nav ul {
+  margin: auto;
+  display: block;
+  text-align: center; }
+  @media screen and (min-width: 974px) {
+    .post-nav ul {
+      margin-top: 200px; } }
+  .post-nav ul li {
+    list-style-type: none; }
 
 /*# sourceMappingURL=style.css.map */
