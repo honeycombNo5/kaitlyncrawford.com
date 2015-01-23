@@ -1,0 +1,18 @@
+<div class="container">
+  <div>
+    <h2><a href="{{ post.url }}">{{post.title}}</a></h2>
+    {{ post.excerpt }}
+    {% if post.excerpt != post.body %}
+      <a href="{{post.url}}">Read more &rarr;</a>
+    {% endif %}
+    </a>
+  </div>
+  <div>
+    <ul>
+      {% for tag in taxonomy['tags'] %}
+        <li><a href="{{tag.url}}">{{tag.value}}</a></li>
+      {% endfor %}
+</ul>
+  </div>
+</div>
+
