@@ -98,4 +98,35 @@ body:before {
   .post-nav ul li {
     list-style-type: none; }
 
+.post-date {
+  border: solid 1px black; }
+  @media screen and (min-width: 974px) {
+    .post-date {
+      float: left;
+      display: block;
+      margin-right: 3.16844%;
+      width: 19.75788%; }
+      .post-date:last-child {
+        margin-right: 0; } }
+
+@media screen and (min-width: 974px) {
+  .post-title {
+    float: left;
+    display: block;
+    margin-right: 3.16844%;
+    width: 65.61052%;
+    margin-left: 34.38948%; }
+    .post-title:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 974px) {
+  .post-body {
+    float: left;
+    display: block;
+    margin-right: 3.16844%;
+    width: 77.07368%;
+    margin-left: 11.46316%; }
+    .post-body:last-child {
+      margin-right: 0; } }
+
 /*# sourceMappingURL=style.css.map */

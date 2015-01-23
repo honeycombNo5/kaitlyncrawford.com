@@ -86,3 +86,30 @@ $desktop: new-breakpoint(min-width 974px);
 	}
 }		
 
+//SIDEBAR MESSAGE
+
+
+//POST CONTENT AREA
+.post-date {
+	border: solid 1px black;
+	@include media($desktop) {
+			@include span-columns(2 of 9);
+			//@include omega();
+		}
+}
+
+.post-title { 
+	@include media($desktop) {
+		@include span-columns(6 of 9);
+		@include shift(3);
+		//@include omega();
+	}
+}
+
+.post-body {
+	@include media($desktop) {
+		@include span-columns(7 of 9);
+		@include shift(1);
+		//@include omega();
+	}
+}
