@@ -5,14 +5,11 @@
 	<title>{{site.title}} | {{title}}</title>
   <script src="//use.typekit.net/gkv3dap.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
-	<link rel="stylesheet" href="/css/layout.css">
-	<link rel="stylesheet" href="/css/normalize.css">
-	<link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/type.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-<div class="container">
-      <div class="nav-main container">
+<div class="wrapper">
+      <div class="nav-main">
         <div class="inner-nav">
            <ul class="menu-pages">
       			{% for page in site.pages %}
@@ -23,14 +20,14 @@
       		</ul>
         </div>
       </div>
-      <div class="content-main container">
+      <div class="content-main">
         <div class="container">
 
           {{ content }}
 
         </div>
       </div>
-      <div class="nav-selection container">
+      <div class="nav-selection">
       	  
         {{ sidebar_content }}
 

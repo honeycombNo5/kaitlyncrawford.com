@@ -1,0 +1,61 @@
+@import "bourbon/bourbon";
+@import "variables";
+@import "neat/neat";
+
+$mobile: new-breakpoint(max-width 480px);
+$desktop: new-breakpoint(min-width 850px);
+
+
+
+.wrapper {
+	@include outer-container;
+	
+	.nav-main {
+		@include media($desktop) {
+			@include span-columns(2);
+		}
+	}
+
+	.content-main {
+		@include media($desktop) {
+			@include span-columns(9);
+		}
+	}
+
+	.nav-selection {
+		@include media($desktop) {
+			@include span-columns(1);
+		}
+	}
+}
+
+
+//VERTICAL NAV
+
+.inner-nav {
+	min-width: 160px;
+	margin-top: 50px;
+	display: block;
+	overflow: hidden;
+	text-align: right;
+	border: solid 1px black;
+	
+	 ul li {
+		display: inline-block;
+		margin: 0 1% 0 1%;
+		padding: 0 0 0 0px;
+		font-size: 1.5em;
+		line-height: .95em;
+		font-family: 'Abril Fatface', cursive;
+		color: #231F20;
+
+		a {
+			text-decoration: none;
+		}
+
+		a:visited {
+			text-decoration: none;
+			color: #231F20;
+		}
+	}
+}		
