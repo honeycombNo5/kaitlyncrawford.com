@@ -276,12 +276,6 @@ article.blog-post img {
 }
 }
 
-.post-preview {
-	border-bottom: 1px solid #c4c4c4;
-	margin-bottom: 10px;
-	margin-right: 2%;
-	margin-left: 2%;
-}
 /*=================PORTFOLIO ITEM===========*/
 
 @media screen and (min-width: 800px) {
