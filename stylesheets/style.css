@@ -176,7 +176,61 @@ html {
   .post-nav ul li {
     list-style-type: none; }
 
-/*article.blog-post {
+.work-title {
+  margin-top: 18px;
+  margin-left: 1%;
+  padding-bottom: 6px;
+  border-bottom: 1.5px solid black;
+  display: inline-block;
+  font-size: 1.25em; }
+
+article.portfolio-item {
+  float: left;
+  display: block;
+  margin-right: 3.59712%;
+  width: 100%; }
+  article.portfolio-item:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 800px) {
+    article.portfolio-item {
+      padding-left: 33.85417px; } }
+  article.portfolio-item p:first-child {
+    float: left;
+    display: block;
+    margin-right: 3.59712%;
+    width: 100%;
+    font-family: "futura-pt",sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: -2.8777%; }
+    article.portfolio-item p:first-child:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 800px) {
+      article.portfolio-item p:first-child {
+        width: 100%;
+        margin: auto; } }
+  @media screen and (min-width: 800px) {
+    article.portfolio-item p {
+      float: left;
+      display: block;
+      margin-right: 3.59712%;
+      width: 65.46763%;
+      margin-left: 34.53237%; }
+      article.portfolio-item p:last-child {
+        margin-right: 0; } }
+  article.portfolio-item img {
+    width: 100%; }
+    @media screen and (min-width: 800px) {
+      article.portfolio-item img {
+        float: left;
+        display: block;
+        margin-right: 3.59712%;
+        width: 100%;
+        margin-left: -57.55396%; }
+        article.portfolio-item img:last-child {
+          margin-right: 0; } }
+
+/*.blog-post {
 	@include outer-container;
 	@include span-columns(9 of 9);
 	border: solid 1px black;
@@ -221,81 +275,100 @@ html {
 		margin-top: 1.7rem;
 	}
 }*/
-/*article.blog-post {
-	@include outer-container;
-.date {
-	@include fill-parent();
-	@include row(table);
-	@include out
-	.date-inner {
-		margin-top: 5%;
-		margin-left: 3%;
-		padding-bottom: 10px;
-		border-bottom: 1px solid #979797;
-		font-family: "futura-pt",sans-serif;
-		font-weight: 500;
-		font-size: 1em;
-		font-style: normal;
-	}
+article.blog-post {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto; }
+  article.blog-post::after {
+    clear: both;
+    content: "";
+    display: table; }
+  article.blog-post .date {
+    width: 100%;
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+    article.blog-post .date .date-inner {
+      /*display: inline;
+      margin-top: 5%;
+      margin-left: 3%;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #979797;
+      font-family: "futura-pt",sans-serif;
+      font-weight: 500;
+      font-size: 1em;
+      font-style: normal;*/
+      margin-top: 18px;
+      margin-left: 1%;
+      padding-bottom: 6px;
+      border-bottom: 1.5px solid black;
+      display: inline-block;
+      font-size: 1.25em;
+      font-family: "futura-pt",sans-serif;
+      font-weight: 500; }
+  article.blog-post .blog-post-title {
+    width: 100%;
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+    article.blog-post .blog-post-title h1 {
+      margin: 30px 0 30px 50%;
+      width: 55.70117%; }
+      @media screen and (max-width: 800px) {
+        article.blog-post .blog-post-title h1 {
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto; } }
+
+.blog-post-body {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  width: 70.38%;
+  margin: auto; }
+  @media screen and (max-width: 800px) {
+    .blog-post-body {
+      width: 90%; } }
+
+/*.work-title {
+	margin-top: 20px;
+	margin-left: 1%;
+	padding-bottom: 10px;
+	border-bottom: 2px solid black; 
+	display: inline-block;
 }
-.post-title {
-	@include fill-parent();
-	@include row(table);
-}
-.post-body {
-	@include fill-parent();
-	@include row(table);
-}
-}*/
-.work-title {
-  margin-top: 20px;
-  margin-left: 1%;
-  padding-bottom: 10px;
-  border-bottom: 2px solid black;
-  display: inline-block; }
 
 article.portfolio-item {
-  float: left;
-  display: block;
-  margin-right: 3.59712%;
-  width: 100%; }
-  article.portfolio-item:last-child {
-    margin-right: 0; }
-  @media screen and (min-width: 800px) {
-    article.portfolio-item {
-      padding-left: 33.85417px; } }
-  article.portfolio-item p:first-child {
-    float: left;
-    display: block;
-    margin-right: 3.59712%;
-    width: 100%;
-    font-family: "futura-pt",sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    margin-left: -2.8777%; }
-    article.portfolio-item p:first-child:last-child {
-      margin-right: 0; }
-  @media screen and (min-width: 800px) {
-    article.portfolio-item p {
-      float: left;
-      display: block;
-      margin-right: 3.59712%;
-      width: 65.46763%;
-      margin-left: 34.53237%; }
-      article.portfolio-item p:last-child {
-        margin-right: 0; } }
-  article.portfolio-item img {
-    width: 100%; }
-    @media screen and (min-width: 800px) {
-      article.portfolio-item img {
-        float: left;
-        display: block;
-        margin-right: 3.59712%;
-        width: 100%;
-        margin-left: -57.55396%; }
-        article.portfolio-item img:last-child {
-          margin-right: 0; } }
+	//@include outer-countainer;
+	@include span-columns(9 of 9);
+		@include media($mid) {
+			padding-left: $gutter;
+			}
+		p:first-child {
+			@include span-columns (9 of 9);
+   			font-family: "futura-pt",sans-serif;
+   			font-weight: 400;
+   			font-style: italic; 
+   			@include shift(-.25)
+		}
 
+		p {
+			@include media($mid) {
+				@include span-columns(6 of 9);
+				@include shift(3);
+			}
+
+		}
+		img {
+			width: 100%;
+			@include media($mid) {
+				@include span-columns(9 of 9);
+				@include shift(-5)
+			}
+		}		
+}
+*/
 .post-preview {
   border-bottom: 1px solid #c4c4c4;
   margin-bottom: 10px;
@@ -333,7 +406,7 @@ body {
 
 h1 {
   font-family: "futura-pt",sans-serif;
-  font-size: 3em;
+  font-size: 2.75em;
   color: #4A4A4A;
   line-height: 60px;
   font-weight: 500;
@@ -398,13 +471,19 @@ blockquote p {
   padding-left: 1.2em;
   border-left: 2px solid #eee;
   color: #999d9e;
-  line-height: 1.25em; }
+  line-height: 1.25em;
+  font-family: "futura-pt",sans-serif;
+  font-weight: 500;
+  font-style: italic; }
 
 blockquote.pullquote p {
   border-left: none;
   padding-left: 0;
   color: #7abf26;
   font-size: 2.125em;
-  font-weight: 300; }
+  font-weight: 300;
+  font-family: "futura-pt",sans-serif;
+  font-weight: 400;
+  font-style: italic; }
 
 /*# sourceMappingURL=style.css.map */

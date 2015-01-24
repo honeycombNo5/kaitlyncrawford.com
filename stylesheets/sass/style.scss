@@ -212,12 +212,58 @@ $desktopxl: new-breakpoint(min-width 1212px);
 	}
 }		
 
-//SIDEBAR MESSAGE
+//PORTFOLIO ITEM
+
+.work-title {
+	margin-top: 18px;
+	margin-left: 1%;
+	padding-bottom: 6px;
+	border-bottom: 1.5px solid black; 
+	display: inline-block;
+	font-size: 1.25em
+}
+
+article.portfolio-item {
+	//@include outer-countainer;
+	@include span-columns(9 of 9);
+		@include media($mid) {
+			padding-left: $gutter;
+			}
+		p:first-child {
+			@include span-columns (9 of 9);
+   			font-family: "futura-pt",sans-serif;
+   			font-weight: 400;
+   			font-style: italic; 
+   			@include shift(-.25);
+   			@include media($medium) {
+   				width: 100%;
+   				margin: auto;
+
+   			}
+		}
+
+		p {
+			@include media($mid) {
+				@include span-columns(6 of 9);
+				@include shift(3);
+			}
+
+		}
+		img {
+			width: 100%;
+			@include media($mid) {
+				@include span-columns(9 of 9);
+				@include shift(-5)
+			}
+		}		
+}
+
+
 
 
 //POST CONTENT AREA
 
-/*article.blog-post {
+/*.blog-post {
 	@include outer-container;
 	@include span-columns(9 of 9);
 	border: solid 1px black;
@@ -263,13 +309,13 @@ $desktopxl: new-breakpoint(min-width 1212px);
 	}
 }*/
 
-/*article.blog-post {
+article.blog-post {
 	@include outer-container;
 .date {
 	@include fill-parent();
 	@include row(table);
-	@include out
 	.date-inner {
+		/*display: inline;
 		margin-top: 5%;
 		margin-left: 3%;
 		padding-bottom: 10px;
@@ -277,20 +323,42 @@ $desktopxl: new-breakpoint(min-width 1212px);
 		font-family: "futura-pt",sans-serif;
 		font-weight: 500;
 		font-size: 1em;
-		font-style: normal;
+		font-style: normal;*/
+		margin-top: 18px;
+		margin-left: 1%;
+		padding-bottom: 6px;
+		border-bottom: 1.5px solid black; 
+		display: inline-block;
+		font-size: 1.25em;
+		font-family: "futura-pt",sans-serif;
+		font-weight: 500;
 	}
 }
-.post-title {
+.blog-post-title {
 	@include fill-parent();
 	@include row(table);
+		h1 {
+			margin: 30px 0 30px 50%;
+			//margin-right: -0.0878112%;
+			width: 55.70117%;
+			@include media($medium) {
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			}
+		}
 }
-.post-body {
+.blog-post-body {
 	@include fill-parent();
 	@include row(table);
-}
-}*/
+	width: 70.38%;
+	margin: auto;
+	@include media($medium) {
+		width: 90%}
+	}
 
-.work-title {
+/*.work-title {
 	margin-top: 20px;
 	margin-left: 1%;
 	padding-bottom: 10px;
@@ -327,7 +395,7 @@ article.portfolio-item {
 			}
 		}		
 }
-
+*/
 //INDEX
 
 
@@ -377,7 +445,7 @@ body {
 
 h1 {
 font-family: "futura-pt",sans-serif;
-font-size: 3em;
+font-size: 2.75em;
 color: #4A4A4A;
 line-height: 60px;
 font-weight: 500;
@@ -440,11 +508,17 @@ blockquote p {
 	padding-left:1.2em;
 	border-left:2px solid #eee;
 	color:#999d9e;
-	line-height:1.25em
+	line-height:1.25em;
+	font-family: "futura-pt",sans-serif;
+	font-weight: 500;
+	font-style: italic;
 	}
 blockquote.pullquote p{
 	border-left:none;padding-left:0;
 	color:#7abf26;
 	font-size:2.125em;
-	font-weight:300
+	font-weight:300;
+	font-family: "futura-pt",sans-serif;
+	font-weight: 400;
+	font-style: italic;
 }
