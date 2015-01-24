@@ -1,10 +1,46 @@
 {% capture content %}
-<div class="post-date">{{post.date | date: "%b %d, %Y"}}</div>
-    <article class="blog-post">
-        <div class="post-title"><h1>{{ title }}</h1></div>
-        <div class="post-body">{{ body }}</div>
-    </article>
+
+
+<article class="blog-post">
+
+
+    <div class="date">
+        <div class="date-inner">{{post.date | date: "%b %d, %Y"}}</div>
+    </div>
+
+    
+        <div class="blog-post-title">
+            <h1>{{ title }}</h1>
+        </div>
+        <div class="blog-post-body">
+
+            {{ body }}
+
+        </div>
+
+</article>
+
+<br>
+<br>
+<br>
+
+{% include 'includes/disqus' %}
+
+
+
+
+
 {% endcapture %}
+
+
+
+
+
+
+
+
+
+
 
 {% capture sidebar_content %}
     <nav class="post-nav">

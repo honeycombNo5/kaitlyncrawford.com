@@ -7,11 +7,15 @@
 
   {{post.body | strip_html | truncatewords: 50}}
 
-  <p class="see-more"><a href="{{post.url}}">more ></a>
+  <nav class="see-more"><a href="{{post.url}}">more ></a></nav>
   
 </article>
 {% endfor %}
 
+{% endcapture %}
+
+{% capture sidebar_content %}
+    <div class="side_blurb"><p>I love research, writing and design. Check out my <a href="/images/resume.pdf">resume</a>or <a href="mailto:kcrawford29@gmail.com">email me.</a></div>
 {% endcapture %}
 
 {% include 'layouts/default' %}

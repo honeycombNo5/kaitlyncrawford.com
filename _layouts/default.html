@@ -5,16 +5,15 @@
 	<title>{{site.title}} | {{title}}</title>
   <script src="//use.typekit.net/gkv3dap.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
-	<link rel="stylesheet" href="/css/layout.css">
-	<link rel="stylesheet" href="/css/normalize.css">
-	<link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/type.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/normalize.css">
+  <link rel="stylesheet" href="/stylesheets/main.css">
 </head>
 <body>
-<div class="container">
-      <div class="nav-main container">
+<div class="wrapper">
+      <div class="nav-main">
         <div class="inner-nav">
-           <ul class="menu-pages">
+           <ul>
       			{% for page in site.pages %}
         			<li>
         				<a href="{{page.url}}"{% if page.url == url %} class="is-current-page"{% endif %}>{{page.title}}</a>
@@ -23,14 +22,14 @@
       		</ul>
         </div>
       </div>
-      <div class="content-main container">
-        <div class="container">
+      <div class="content-main">
+        <div class="wrapper">
 
           {{ content }}
 
         </div>
       </div>
-      <div class="nav-selection container">
+      <div class="nav-selection">
       	  
         {{ sidebar_content }}
 
