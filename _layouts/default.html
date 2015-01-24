@@ -6,12 +6,14 @@
   <script src="//use.typekit.net/gkv3dap.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/normalize.css">
+  <link rel="stylesheet" href="/stylesheets/main.css">
 </head>
 <body>
 <div class="wrapper">
       <div class="nav-main">
         <div class="inner-nav">
-           <ul class="menu-pages">
+           <ul>
       			{% for page in site.pages %}
         			<li>
         				<a href="{{page.url}}"{% if page.url == url %} class="is-current-page"{% endif %}>{{page.title}}</a>
@@ -21,7 +23,7 @@
         </div>
       </div>
       <div class="content-main">
-        <div class="container">
+        <div class="wrapper">
 
           {{ content }}
 
