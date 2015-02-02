@@ -458,7 +458,8 @@ article.portfolio-item {
 .post-preview {
   margin-bottom: 10px;
   margin-right: 2%;
-  margin-left: 2%; }
+  margin-left: 2%;
+  border-bottom: solid black 1px; }
   .post-preview h2 a {
     text-decoration: none; }
   .post-preview h2 a:link,
@@ -469,6 +470,10 @@ article.portfolio-item {
   .post-preview h2 a:visited {
     text-decoration: none;
     color: #231F20; }
+  .post-preview img {
+    width: 100%; }
+  .post-preview .separator {
+    margin: 42px 0 30px 0; }
 
 .post-preview nav.see-more {
   text-transform: uppercase;
@@ -547,7 +552,14 @@ p {
 .portfolio-item a:hover,
 .portfolio-item a:active,
 .portfolio-item a:focus,
-.portfolio-item a:visited {
+.portfolio-item a:visited,
+.blog-post-body a,
+.blog-post-body a:link,
+.blog-post-body a:visited,
+.blog-post-body a:hover,
+.blog-post-body a:active,
+.blog-post-body a:focus,
+.blog-post-body a:visited {
   color: #231F20;
   text-decoration: none;
   text-transform: uppercase;

@@ -513,6 +513,7 @@ article.portfolio-item {
 	margin-bottom: 10px;
 	margin-right: 2%;
 	margin-left: 2%;
+	border-bottom: solid black 1px;
 		h2 a {
 			text-decoration: none;
 		}
@@ -525,6 +526,12 @@ article.portfolio-item {
 		h2 a:visited {
 			text-decoration: none;
 			color: #231F20;
+		}
+		img {
+			width: 100%;
+		}
+		.separator {
+			margin: 42px 0 30px 0;
 		}
 	}
 .post-preview nav.see-more {
@@ -592,7 +599,8 @@ font-weight: 400;
 .post-body,
 .post-tile h2,
 .side_blurb,
-.portfolio-item {
+.portfolio-item,
+.blog-post-body {
 	a,
 	a:link,
 	a:visited,
