@@ -22,7 +22,7 @@ html {
       display: block;
       margin-right: 2.6738%;
       width: 12.29947%;
-      margin-right: 1%;
+      margin-right: 1.1%;
       margin-left: 1%; }
       .wrapper .nav-main:last-child {
         margin-right: 0; } }
@@ -190,7 +190,7 @@ html {
   line-height: .8em;
   font-family: 'Abril Fatface', cursive;
   color: #082419; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .fatface {
       font-size: 1.75em; } }
 
@@ -220,13 +220,17 @@ html {
         margin: 0 0 0 0px; } }
     .inner-nav ul li {
       display: inline-block;
-      margin: 0 5% 0 5%;
-      font-size: 1em;
+      margin: 30px 5% 0 5%;
+      font-size: 1.5em;
       line-height: .95em;
       font-family: 'Abril Fatface', cursive;
       color: #231F20; }
+      @media screen and (max-width: 500px) {
+        .inner-nav ul li {
+          font-size: 1em; } }
       @media screen and (min-width: 985px) {
         .inner-nav ul li {
+          margin-top: 0px;
           margin-left: -50px;
           display: block;
           font-size: 2.1em;
@@ -293,13 +297,15 @@ article.portfolio-item {
         width: 100%;
         margin: auto; } }
   @media screen and (min-width: 800px) {
-    article.portfolio-item p {
+    article.portfolio-item p,
+    article.portfolio-item h2 {
       float: left;
       display: block;
       margin-right: 3.59712%;
       width: 65.46763%;
       margin-left: 34.53237%; }
-      article.portfolio-item p:last-child {
+      article.portfolio-item p:last-child,
+      article.portfolio-item h2:last-child {
         margin-right: 0; } }
   article.portfolio-item img {
     width: 100%; }
@@ -511,7 +517,7 @@ h2 {
   font-style: regular; }
 
 p {
-  font-size: 1em;
+  font-size: 1.2em;
   color: #4A4A4A;
   line-height: 1.4em;
   font-family: "brandon-grotesque",sans-serif;
@@ -589,5 +595,33 @@ blockquote.pullquote p {
   font-family: "futura-pt",sans-serif;
   font-weight: 400;
   font-style: italic; }
+
+#content {
+  /*width: 980px;*/
+  /*width: 95%;*/
+  width: auto;
+  margin: 0 auto; }
+
+.item {
+  display: block;
+  float: left;
+  width: 300px;
+  margin: 0 20px 20px 0;
+  -webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+  -moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+  -ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+  -o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+  transition: left .4s ease-in-out, top .4s ease-in-out .4s; }
+
+.featured {
+  width: 620px; }
+
+.item img {
+  width: 300px;
+  height: auto; }
+
+.featured img {
+  width: 620px;
+  height: auto; }
 
 /*# sourceMappingURL=style.css.map */

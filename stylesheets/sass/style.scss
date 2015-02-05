@@ -5,7 +5,7 @@
 
 //MOBILE BREAKPOINTS
 
-$mobile: new-breakpoint(max-width 480px);
+$mobile: new-breakpoint(max-width 500px);
 $medium: new-breakpoint(max-width 800px);
 $mid: new-breakpoint(min-width 800px);
 $non-desktop: new-breakpoint(max-width 985px);
@@ -20,8 +20,12 @@ $desktopxl: new-breakpoint(min-width 1212px);
 	.nav-main {
 		@include media($desktop) {
 			@include span-columns(1.75);
-			margin-right: 1%;
+			margin-right: 1.1%;
 			margin-left: 1%;
+		}
+		@include media($desktopxl) {
+
+
 		}
 	}
 
@@ -265,12 +269,16 @@ $desktopxl: new-breakpoint(min-width 1212px);
 
 	  li {
 		display: inline-block;
-		margin: 0 5% 0 5%;
-		font-size: 1em;
+		margin: 30px 5% 0 5%;
+		font-size: 1.5em;
 		line-height: .95em;
 		font-family: 'Abril Fatface', cursive;
 		color: #231F20;
+			@include media($mobile) {
+				font-size: 1em;
+			}
 			@include media($desktop) {
+				margin-top: 0px;
 				margin-left: -50px;
 				display: block;
 				font-size: 2.1em;
@@ -347,7 +355,8 @@ article.portfolio-item {
    			}
 		}
 
-		p {
+		p,
+		h2 {
 			@include media($mid) {
 				@include span-columns(6 of 9);
 				@include shift(3);
@@ -549,6 +558,14 @@ article.portfolio-item {
 	}
 
 }
+
+//==========================ABOUT============================//
+
+
+
+//==========================CONTACT============================//
+
+
 	
 //TYPE
 
@@ -579,7 +596,7 @@ font-style: regular;
 }
 
 p {
-font-size: 1em;
+font-size: 1.2em;
 color: #4A4A4A;
 line-height: 1.4em;
 font-family: "brandon-grotesque",sans-serif;
@@ -639,4 +656,39 @@ blockquote.pullquote p{
 	font-family: "futura-pt",sans-serif;
 	font-weight: 400;
 	font-style: italic;
+}
+
+//==========================MASONRY=======================================//
+
+#content {
+	/*width: 980px;*/
+	/*width: 95%;*/
+	width: auto;
+	margin: 0 auto;
+}
+
+.item {
+	display: block;
+	float: left;
+	width: 300px;
+	margin: 0 20px 20px 0;
+	-webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	-moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	-ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	-o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+}
+
+.featured {
+	width: 620px;
+}
+
+.item img {
+	width: 300px;
+	height: auto;
+}
+
+.featured img {
+  width: 620px;
+  height: auto;
 }
