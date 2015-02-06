@@ -270,7 +270,8 @@ html {
   padding-bottom: 6px;
   border-bottom: 1.5px solid black;
   display: inline-block;
-  font-size: 1.25em; }
+  font-size: 1.25em;
+  color: #072318; }
 
 article.portfolio-item {
   float: left;
@@ -289,7 +290,9 @@ article.portfolio-item {
     width: 100%;
     font-family: "futura-pt",sans-serif;
     font-weight: 400;
+    font-size: 1.2em;
     font-style: italic;
+    color: #072318;
     margin-left: -2.8777%; }
     article.portfolio-item p:first-child:last-child {
       margin-right: 0; }
@@ -341,51 +344,6 @@ article.portfolio-item {
       margin-left: 0%;
       margin-right: 0%; } }
 
-/*.blog-post {
-	@include outer-container;
-	@include span-columns(9 of 9);
-	border: solid 1px black;
-		.date-inner {
-			@include fill-parent();
-			@include row(table);
-			border-bottom: solid 1px black;
-			margin-top: 5%;
-			margin-left: 3%;
-			padding-bottom: 10px;
-			border-bottom: 1px solid #979797;
-			font-family: "futura-pt",sans-serif;
-			font-weight: 500;
-			font-size: 1em;
-			font-style: normal;
-}
-}
-
-
-.post-title { 
-	@include row(table);
-		h1 {
-		@include media($mid) {
-		@include span-columns(5 of 9);
-		@include shift(4);
-	    }
-	}
-}
-
-.post-body {
-	@include outer-container;
-	@include span-columns(7 of 9);
-	@include shift(1);
-	@include row(table);
-		//@include omega();
-	p {
-		margin-bottom: 1.7rem;
-	}
-	img {
-		width: 100%;
-		margin-bottom: 1.7rem;
-		margin-top: 1.7rem;
-	}
-}*/
 article.blog-post {
   max-width: 1300px;
   margin-left: auto;
@@ -487,6 +445,10 @@ article.portfolio-item {
   margin-right: 2%;
   margin-left: 2%;
   border-bottom: solid black 1px; }
+  .post-preview p {
+    font-size: 1.2em; }
+  .post-preview h2 {
+    margin-top: 1%; }
   .post-preview h2 a {
     text-decoration: none; }
   .post-preview h2 a:link,
@@ -497,8 +459,9 @@ article.portfolio-item {
   .post-preview h2 a:visited {
     text-decoration: none;
     color: #231F20; }
-  .post-preview img {
-    width: 100%; }
+
+img {
+  width: 100%; }
 
 .post-preview nav.see-more {
   text-transform: uppercase;
@@ -536,7 +499,7 @@ h2 {
   font-style: regular; }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: #4A4A4A;
   line-height: 1.4em;
   font-family: "brandon-grotesque",sans-serif;
