@@ -26,9 +26,9 @@ html {
       margin-left: 1%; }
       .wrapper .nav-main:last-child {
         margin-right: 0; } }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 985px) {
     .wrapper .content-main {
-      margin: 0 1.5% 0 1.5%; } }
+      margin: 0 3% 0 3%; } }
   @media screen and (min-width: 985px) {
     .wrapper .content-main {
       float: left;
@@ -233,9 +233,10 @@ html {
           margin-top: 0px;
           margin-left: -50px;
           display: block;
-          font-size: 2.1em;
+          font-size: 2em;
           line-height: .95em;
-          position: relative; } }
+          position: relative;
+          margin-right: -1%; } }
       @media screen and (min-width: 1212px) {
         .inner-nav ul li {
           font-size: 2.3em;
@@ -298,14 +299,16 @@ article.portfolio-item {
         margin: auto; } }
   @media screen and (min-width: 800px) {
     article.portfolio-item p,
-    article.portfolio-item h2 {
+    article.portfolio-item h2,
+    article.portfolio-item blockquote {
       float: left;
       display: block;
       margin-right: 3.59712%;
       width: 65.46763%;
       margin-left: 34.53237%; }
       article.portfolio-item p:last-child,
-      article.portfolio-item h2:last-child {
+      article.portfolio-item h2:last-child,
+      article.portfolio-item blockquote:last-child {
         margin-right: 0; } }
   article.portfolio-item img {
     width: 100%; }
@@ -318,6 +321,25 @@ article.portfolio-item {
         margin-left: -57.55396%; }
         article.portfolio-item img:last-child {
           margin-right: 0; } }
+
+#about p {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%; }
+  @media screen and (max-width: 500px) {
+    #about p {
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%; } }
+#about img {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%; }
+  @media screen and (max-width: 500px) {
+    #about img {
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%; } }
 
 /*.blog-post {
 	@include outer-container;
@@ -462,7 +484,6 @@ article.portfolio-item {
 }
 */
 .post-preview {
-  margin-bottom: 10px;
   margin-right: 2%;
   margin-left: 2%;
   border-bottom: solid black 1px; }
@@ -478,12 +499,10 @@ article.portfolio-item {
     color: #231F20; }
   .post-preview img {
     width: 100%; }
-  .post-preview .separator {
-    margin: 42px 0 30px 0; }
 
 .post-preview nav.see-more {
   text-transform: uppercase;
-  margin: 2% 0 4% 0; }
+  margin: 1.5% 0 2% 0; }
   .post-preview nav.see-more a,
   .post-preview nav.see-more a:link,
   .post-preview nav.see-more a:visited,
