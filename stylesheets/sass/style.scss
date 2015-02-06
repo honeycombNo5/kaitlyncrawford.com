@@ -65,7 +65,7 @@ $desktopxl: new-breakpoint(min-width 1212px);
 	right: 10%;
 	top: 5em;
 	z-index: 1;
-	max-width: 900px;
+	max-width: 875px;
 	margin: auto;
 		img.shape_one {
 			width: 324/787 * 100%;
@@ -279,11 +279,12 @@ $desktopxl: new-breakpoint(min-width 1212px);
 				font-size: 1em;
 			}
 			@include media($desktop) {
-				margin-top: 0px;
+				margin-top: 2px;
+				margin-bottom: 2px;
 				margin-left: -50px;
 				display: block;
 				font-size: 2em;
-				line-height: .95em;
+				line-height: 1em;
 				position: relative;
 				margin-right: -1%;
 			}
@@ -324,6 +325,9 @@ $desktopxl: new-breakpoint(min-width 1212px);
 		}
 	li {
 		list-style-type: none;
+		img {
+			max-width: 35px;
+		}
 	}
 }		
 
@@ -332,7 +336,7 @@ $desktopxl: new-breakpoint(min-width 1212px);
 .work-title {
 	margin-top: 18px;
 	margin-left: 1%;
-	padding-bottom: 6px;
+	padding-bottom: 4px;
 	border-bottom: 1.5px solid black; 
 	display: inline-block;
 	font-size: 1.25em;
@@ -381,8 +385,9 @@ article.portfolio-item {
 
 //ABOUT
 
-#about {
-	p {
+.about {
+	p,
+	h3 {
 		width: 80%;
 		margin-left: 10%;
 		margin-right: 10%;
@@ -393,17 +398,46 @@ article.portfolio-item {
 			}
 	}
 	img {
-		width: 80%;
-		margin-left: 10%;
-		margin-right: 10%;
-			@include media($mobile) {
+		// width: 80%;
+		// margin-left: 10%;
+		// margin-right: 10%;
+		// 	@include media($mobile) {
 				width: 100%;
 				margin-left: 0%;
 				margin-right: 0%;
-			}
+			// }
 	}
 }
+.side_blurb.about {
+	margin-top: 50px;
+	@include media($non-desktop) {
+		display: none;
+	}
+	img {
+		max-width: 43px;
+	}
+}
+//Contact
 
+#contact {
+	text-align: center;
+	margin-top: 20%;
+	a:first-child,
+	a:first-child:hover,
+	a:first-child:active,
+	a:first-child:visited {
+		color: #4A4A4A;
+	}
+	p.social {
+		a,
+		a:hover,
+		a:visited,
+		a:active {
+			color: #4A4A4A;
+			text-decoration: none;
+		}
+	}
+}
 article.blog-post {
 	@include outer-container;
 .date {
@@ -587,10 +621,14 @@ font-style: regular;
 p {
 font-size: 1.4em;
 color: #4A4A4A;
-line-height: 1.4em;
+line-height: 1.3em;
 font-family: "brandon-grotesque",sans-serif;
 font-style: normal;
 font-weight: 400;
+	@include media($mobile) {
+		font-size: 1.2em;
+		//line-height: 1em;
+	}
 }
 
 
@@ -599,6 +637,9 @@ font-weight: 400;
 	padding-right: 10%;
 	@include media($non-desktop) {
 		text-align: center;
+	}
+	p {
+		font-size: 1.2em;
 	}
 }
 
@@ -655,6 +696,9 @@ blockquote.pullquote p{
 	/*width: 95%;*/
 	width: auto;
 	margin: 0 auto;
+	@include media($non-desktop) {
+		margin-top: 25px;
+	}
 }
 
 .item {

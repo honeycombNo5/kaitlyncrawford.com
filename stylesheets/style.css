@@ -60,7 +60,7 @@ html {
   right: 10%;
   top: 5em;
   z-index: 1;
-  max-width: 900px;
+  max-width: 875px;
   margin: auto; }
   .main img.shape_one {
     width: 41.169%;
@@ -230,11 +230,12 @@ html {
           font-size: 1em; } }
       @media screen and (min-width: 985px) {
         .inner-nav ul li {
-          margin-top: 0px;
+          margin-top: 2px;
+          margin-bottom: 2px;
           margin-left: -50px;
           display: block;
           font-size: 2em;
-          line-height: .95em;
+          line-height: 1em;
           position: relative;
           margin-right: -1%; } }
       @media screen and (min-width: 1212px) {
@@ -263,11 +264,13 @@ html {
       margin-top: 250px; } }
   .post-nav ul li {
     list-style-type: none; }
+    .post-nav ul li img {
+      max-width: 35px; }
 
 .work-title {
   margin-top: 18px;
   margin-left: 1%;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   border-bottom: 1.5px solid black;
   display: inline-block;
   font-size: 1.25em;
@@ -325,24 +328,44 @@ article.portfolio-item {
         article.portfolio-item img:last-child {
           margin-right: 0; } }
 
-#about p {
+.about p,
+.about h3 {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%; }
   @media screen and (max-width: 500px) {
-    #about p {
+    .about p,
+    .about h3 {
       width: 100%;
       margin-left: 0%;
       margin-right: 0%; } }
-#about img {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%; }
-  @media screen and (max-width: 500px) {
-    #about img {
-      width: 100%;
-      margin-left: 0%;
-      margin-right: 0%; } }
+.about img {
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%; }
+
+.side_blurb.about {
+  margin-top: 50px; }
+  @media screen and (max-width: 985px) {
+    .side_blurb.about {
+      display: none; } }
+  .side_blurb.about img {
+    max-width: 43px; }
+
+#contact {
+  text-align: center;
+  margin-top: 20%; }
+  #contact a:first-child,
+  #contact a:first-child:hover,
+  #contact a:first-child:active,
+  #contact a:first-child:visited {
+    color: #4A4A4A; }
+  #contact p.social a,
+  #contact p.social a:hover,
+  #contact p.social a:visited,
+  #contact p.social a:active {
+    color: #4A4A4A;
+    text-decoration: none; }
 
 article.blog-post {
   max-width: 1300px;
@@ -501,10 +524,13 @@ h2 {
 p {
   font-size: 1.4em;
   color: #4A4A4A;
-  line-height: 1.4em;
+  line-height: 1.3em;
   font-family: "brandon-grotesque",sans-serif;
   font-style: normal;
   font-weight: 400; }
+  @media screen and (max-width: 500px) {
+    p {
+      font-size: 1.2em; } }
 
 .side_blurb {
   padding-left: 10%;
@@ -512,6 +538,8 @@ p {
   @media screen and (max-width: 985px) {
     .side_blurb {
       text-align: center; } }
+  .side_blurb p {
+    font-size: 1.2em; }
 
 .post-body a,
 .post-body a:link,
@@ -583,6 +611,9 @@ blockquote.pullquote p {
   /*width: 95%;*/
   width: auto;
   margin: 0 auto; }
+  @media screen and (max-width: 985px) {
+    #content {
+      margin-top: 25px; } }
 
 .item {
   display: block;

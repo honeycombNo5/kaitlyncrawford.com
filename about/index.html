@@ -1,10 +1,47 @@
 {% capture content %}
-<div id="about" class="wrapper">
+<div class="about" class="wrapper">
 	
 	{{ body }}
 
+
+
+<div><a name="skills">
+<h3>SKILLS</h3>
+<p>Adobe Photoshop, Illustrator, InDesign
+<br>HTML/CSS
+<br>Basic Javascript, PHP, Git
+<br>Wordpress
+<br>Google Analytics
+<br>Microsoft Office
+<br>Google Drive
+</p>
+</a>
 </div>
 
+<h3>EMPLOYMENT</h3>
+<p>TastyPlacement - Austin, TX<br>
+Analyst (April-December 2014)</p>
+
+<p>San Antonio Book Festival - San Antonio, TX<br>
+Assistant to Director (March 2013–April 2014)</p>
+
+<p>Uvalde Leader-News - Uvalde, TX<br>
+Staff Writer (June–December 2012)</p>
+
+<p>Texas Book Festival - Austin, TX<br>
+Literary Intern (March–November 2011)</p>
+
+<p>Texas Performing Arts - Austin, TX<br>
+Administrative Assistant (September 2010–March 2011)</p>
+
+<p style="text-align: center;"><strong>For more details about my work experience and employment history, download my full <a>resume</a>.</strong></p> 
+<br>
+</div>
+
+{% endcapture %}
+
+{% capture sidebar_content %}
+    <div class="side_blurb about"><p>Learn about my work experience.</p><a href="#skills" style="margin-left: 10%; margin-right: 20;"><img src="images/down_arrow.png" /></a></div>
 {% endcapture %}
 
 {% include 'layouts/default' %}
