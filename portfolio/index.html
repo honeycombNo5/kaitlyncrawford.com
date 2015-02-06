@@ -5,7 +5,7 @@
 
   <h2><a href="{{post.url}}">{{post.title}}</a></h2>
 
-  {{post.body | strip_html | truncatewords: 50}}
+  <p>{{post.body | strip_html | truncatewords: 35}}</p>
 
   <nav class="see-more"><a href="{{post.url}}">more ></a></nav>
   

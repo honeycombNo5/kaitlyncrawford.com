@@ -30,8 +30,8 @@ $desktopxl: new-breakpoint(min-width 1212px);
 	}
 
 	.content-main {
-		@include media($medium) {
-			margin: 0 1.5% 0 1.5%;
+		@include media($non-desktop) {
+			margin: 0 3% 0 3%;
 		}
 		@include media($desktop) {
 			@include span-columns(9.25);
@@ -46,6 +46,7 @@ $desktopxl: new-breakpoint(min-width 1212px);
 	.nav-selection {
 		@include media($desktop) {
 			@include span-columns(1);
+			// padding-right: 1%;
 			
 			
 		}
@@ -281,9 +282,10 @@ $desktopxl: new-breakpoint(min-width 1212px);
 				margin-top: 0px;
 				margin-left: -50px;
 				display: block;
-				font-size: 2.1em;
+				font-size: 2em;
 				line-height: .95em;
 				position: relative;
+				margin-right: -1%;
 			}
 			@include media($desktopxl) {
 				font-size: 2.3em;
@@ -356,7 +358,8 @@ article.portfolio-item {
 		}
 
 		p,
-		h2 {
+		h2,
+		blockquote {
 			@include media($mid) {
 				@include span-columns(6 of 9);
 				@include shift(3);
@@ -369,10 +372,34 @@ article.portfolio-item {
 				@include span-columns(9 of 9);
 				@include shift(-5)
 			}
-		}		
+		}
+
 }
 
+//ABOUT
 
+#about {
+	p {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+			@include media($mobile) {
+				width: 100%;
+				margin-left: 0%;
+				margin-right: 0%;
+			}
+	}
+	img {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+			@include media($mobile) {
+				width: 100%;
+				margin-left: 0%;
+				margin-right: 0%;
+			}
+	}
+}
 
 
 //POST CONTENT AREA
@@ -519,7 +546,7 @@ article.portfolio-item {
 
 .post-preview {
 	
-	margin-bottom: 10px;
+	//margin-bottom: 10px;
 	margin-right: 2%;
 	margin-left: 2%;
 	border-bottom: solid black 1px;
@@ -539,13 +566,13 @@ article.portfolio-item {
 		img {
 			width: 100%;
 		}
-		.separator {
-			margin: 42px 0 30px 0;
-		}
+		// .separator {
+		// 	margin: 42px 0 30px 0;
+		// }
 	}
 .post-preview nav.see-more {
 	text-transform: uppercase;
-	margin: 2% 0 4% 0;
+	margin: 1.5% 0 2% 0;
 	a,
 	a:link,
 	a:visited,
