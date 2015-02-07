@@ -151,7 +151,19 @@ textarea {
 	}
 }
 
-
+.content-fun {
+	@include media($non-desktop) {
+			margin: 0 3% 0 3%;
+		}
+		@include media($desktop) {
+			@include span-columns(10.25);
+			border-left: 1px solid #D8D8D8;
+  			border-right: 1px solid #D8D8D8;
+  			padding: 0 .75% 0 .75%;
+  			margin-right: 0%;
+  			
+		}
+}
 //HOMEPAGE
 .homepage {
 	background-color: #CB8672;
@@ -1142,8 +1154,6 @@ header:after {
 
 #content {
 	width: auto;
-	margin-left: 3%;
-	margin-right: 3%;
 	display: block;
 	border: solid black 1px;
 
