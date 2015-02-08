@@ -334,12 +334,14 @@ textarea {
 	text-decoration: none;
 	a:link,
 	a:visited,
-	a:hover,
 	a:active,
 	a:focus,
 	a:visited {
 			color: #082419;
 	text-decoration: none;
+	}
+	a:hover {
+		color: #E29977;
 	}
 }
 
@@ -657,7 +659,17 @@ article.portfolio-item {
 			text-decoration: none;
 			color: #231F20;
 		}
+		.work-pic {
+			float: right;
+			width: 200px;
+			height: 150px;
+			// border: solid black 1px;
+			margin-top: 10px;
+		}
 	}
+		
+
+
 		img {
 			width: 100%;
 		}
@@ -698,10 +710,10 @@ body {
 	font-weight: 400;
 }
 
-h1 {
+h1 .title-inner {
 font-family: "futura-pt",sans-serif;
-font-size: 2.75em;
-color: #4A4A4A;
+font-size: 1.2em;
+color: #231F20;
 line-height: 60px;
 font-weight: 500;
 font-style: normal;
@@ -710,16 +722,21 @@ font-style: normal;
 h2 {
 font-family: "futura-pt",sans-serif;
 font-size: 1.5em;
-color: #4A4A4A;
+color: #121212;
 line-height: 44px;
 font-weight: 500;
 font-style: regular;
+}
+
+.portfolio-item h2{
+	// text-transform: uppercase;
+			letter-spacing: 2px;
 
 }
 
 p {
 font-size: 1.4em;
-color: #4A4A4A;
+color: #121212;
 line-height: 1.3em;
 font-family: "brandon-grotesque",sans-serif;
 font-style: normal;
@@ -730,6 +747,14 @@ font-weight: 400;
 	}
 	strong {
 		color: #231F20;
+		font-family: "futura-pt",sans-serif;
+	font-size: 1em;
+	// color: #4A4A4A;
+	line-height: 44px;
+	font-weight: 500;
+	font-style: regular;
+	text-transform: uppercase;
+			letter-spacing: 2px;
 	}
 }
 
