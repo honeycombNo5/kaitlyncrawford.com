@@ -1078,7 +1078,6 @@ td { vertical-align: top; }
 
 
 
-
 @mediat screen and (min-width: 1174px) {
 #content {
 	width: 962px;
@@ -1094,6 +1093,22 @@ td { vertical-align: top; }
 			margin: 0 auto;
 		}
 	}
+
+	@media screen and (max-width: 980px) {
+#content {
+	width: 640px;
+	margin: 0 auto;
+	display: block;
+}
+}
+
+	@media screen and (max-width: 660px) {
+#content {
+	width: 320px;
+	margin: 0 auto;
+	display: block;
+}
+}
 
 .fun_box {
 	width: 962px;
@@ -1114,9 +1129,12 @@ td { vertical-align: top; }
 	transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 }
 
+
 .featured {
 	width: 620px;
 }
+
+
 
 .item img {
 	width: 300px;
@@ -1126,4 +1144,10 @@ td { vertical-align: top; }
 .featured img {
   width: 620px;
   height: auto;
+}
+
+@media screen and (max-width: 660px) {
+  .featured img {
+    width: 300px;
+  }
 }

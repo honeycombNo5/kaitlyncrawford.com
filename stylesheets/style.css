@@ -1114,6 +1114,16 @@ td {
     margin-left: 0px;
     width: 962px;
     margin: 0 auto; } }
+@media screen and (max-width: 980px) {
+  #content {
+    width: 640px;
+    margin: 0 auto;
+    display: block; } }
+@media screen and (max-width: 660px) {
+  #content {
+    width: 320px;
+    margin: 0 auto;
+    display: block; } }
 .fun_box {
   width: 962px;
   box-sizing: border-box;
@@ -1141,5 +1151,9 @@ td {
 .featured img {
   width: 620px;
   height: auto; }
+
+@media screen and (max-width: 660px) {
+  .featured img {
+    width: 300px; } }
 
 /*# sourceMappingURL=style.css.map */
