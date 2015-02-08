@@ -269,7 +269,7 @@ textarea {
   line-height: .8em;
   font-family: 'Abril Fatface', cursive;
   color: #082419; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     .fatface {
       font-size: 1.75em; } }
 
@@ -298,15 +298,17 @@ textarea {
         padding: 0 0 0 0px;
         margin: 0 0 0 0px; } }
     .inner-nav ul li {
+      color: white;
       display: inline-block;
-      margin: 30px 5% 0 5%;
+      margin: 30px 3% 25px 3%;
       font-size: 1.5em;
       line-height: .95em;
-      font-family: 'Abril Fatface', cursive;
-      color: #231F20; }
-      @media screen and (max-width: 500px) {
+      font-family: 'Abril Fatface', cursive; }
+      @media screen and (max-width: 550px) {
         .inner-nav ul li {
-          font-size: 1em; } }
+          font-size: 1.1em;
+          margin: 30px 3% 0 3%;
+          color: white; } }
       @media screen and (min-width: 985px) {
         .inner-nav ul li {
           margin-top: 2px;
@@ -412,7 +414,7 @@ article.portfolio-item {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     .about p,
     .about h3 {
       width: 100%;
@@ -607,7 +609,7 @@ p {
   font-family: "brandon-grotesque",sans-serif;
   font-style: normal;
   font-weight: 400; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     p {
       font-size: 1.2em; } }
   p strong {

@@ -5,7 +5,7 @@
 
 //MOBILE BREAKPOINTS
 
-$mobile: new-breakpoint(max-width 500px);
+$mobile: new-breakpoint(max-width 550px);
 $medium: new-breakpoint(max-width 800px);
 $mid: new-breakpoint(min-width 800px);
 $non-desktop: new-breakpoint(max-width 985px);
@@ -366,14 +366,16 @@ textarea {
 		}
 
 	  li {
+	  	color: white;
 		display: inline-block;
-		margin: 30px 5% 0 5%;
+		margin: 30px 3% 25px 3%;
 		font-size: 1.5em;
 		line-height: .95em;
 		font-family: 'Abril Fatface', cursive;
-		color: #231F20;
 			@include media($mobile) {
-				font-size: 1em;
+				font-size: 1.1em;
+				margin: 30px 3% 0 3%;
+				color: white;
 			}
 			@include media($desktop) {
 				margin-top: 2px;
