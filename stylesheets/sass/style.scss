@@ -151,19 +151,6 @@ textarea {
 	}
 }
 
-.content-fun {
-	@include media($non-desktop) {
-			margin: 0 3% 0 3%;
-		}
-		@include media($desktop) {
-			@include span-columns(10.25);
-			border-left: 1px solid #D8D8D8;
-  			border-right: 1px solid #D8D8D8;
-  			padding: 0 .75% 0 .75%;
-  			margin-right: 0%;
-  			
-		}
-}
 //HOMEPAGE
 .homepage {
 	background-color: #CB8672;
@@ -1018,73 +1005,6 @@ td { vertical-align: top; }
    Author: Luke Shumard (lukeshumard.com)
    ========================================================================== */
 
-#content {
-	/*width: 980px;*/
-	/*width: 95%;*/
-	width: auto;
-	margin: 0 auto;
-}
-
-.item {
-	display: block;
-	float: left;
-	width: 300px;
-	margin: 0 20px 20px 0;
-	-webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
-	-moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
-	-ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
-	-o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
-	transition: left .4s ease-in-out, top .4s ease-in-out .4s;
-}
-
-.featured {
-	width: 620px;
-}
-
-.item img {
-	width: 300px;
-	height: auto;
-}
-
-.featured img {
-  width: 620px;
-  height: auto;
-}
-
-/* Titles */
-h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: normal;
-  font-size: 0.9em;
-  text-transform: uppercase;
-  color: #000;
-  letter-spacing: .2em;
-  line-height: 1;
-  text-align: center;
-  margin: 0;
-  display: inline;
-}
-
-h1 a {
-  color: #000;
-}
-
-header {
-	text-align: center;
-	margin-top: 0.8em;
-}
-
-header:after {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 1px;
-  margin: 0.8em auto;
-  background-color: #111;
-}
-
-
-
 
 
 
@@ -1152,11 +1072,146 @@ header:after {
 
 //==========================MASONRY=======================================//
 
-#content {
-	width: auto;
-	display: block;
-	border: solid black 1px;
+@media screen and (max-width: 1175px) {
 
+.fun-nav-main {
+	width: 100%;
+	/*border: 1px solid black;*/
+}
+
+.inner-nav {
+	min-width: 160px;
+	//margin-top: 50px;
+	display: block;
+	overflow: hidden;
+	/*width: 100%;*/
+	text-align: center;
+	
+
+}
+
+.inner-nav ul {
+	margin: auto;
+	padding: 0 0 0 0px;
+}
+.menu-pages li {
+	display: inline-block;
+	margin: 0 1% 0 1%;
+	padding: 0 0 0 0px;
+	font-size: 1.5em;
+	line-height: .95em;
+	font-family: 'Abril Fatface', cursive;
+	color: #231F20;
+
+}
+
+.menu-pages li a:visited {
+	text-decoration: none;
+	color: #231F20;
+}
+
+}
+
+
+@media screen and (min-width: 1175px) {
+	.fun-nav-main {
+  width: 12.29947%;
+  float: left;
+  display: block;
+  margin-right: 1.1%;
+	margin-left: 1%;
+  /*border: 1px solid black;*/
+
+}
+
+/*to position nav items*/
+.inner-nav {
+	min-width: 140px;
+	//margin-top: 185px;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+  .menu-pages li {
+	text-align: right;
+	font-size: 2.75em;
+	line-height: .85em;
+	font-family: 'Abril Fatface', cursive;
+	position: relative;
+	padding-right: 4%;
+	color: #231F20;
+	margin-left: -50px;
+}
+
+.menu-pages li a:visited {
+	text-decoration: none;
+	color: #231F20;
+}
+}
+
+
+
+.menu-pages {
+	list-style-type: none;
+}
+
+
+
+.menu-pages li a {
+	text-decoration: none;
+}
+
+/*============================MAIN CONTENT SECTION=============================*/
+
+@media screen and (max-width: 1175px) {
+.fun-content-main {
+  width: 100%;
+  float: left;
+  /*margin-right: 1.17%;*/
+  /*border-left: solid 2px #D8D8D8;*/
+  /*box-sizing: border-box;*/
+}
+}
+
+
+@media screen and (min-width: 1175px) {
+.fun-content-main {
+  width: 83.3749995%;
+  float: left;
+  /*margin-right: 1.17%;*/
+  /*border-left: solid 2px #D8D8D8;*/
+  border-left: 3px solid #D8D8D8;
+  border-right: 3px solid #D8D8D8;
+  /*box-sizing: border-box;*/
+  margin: auto;
+}
+}
+
+
+
+
+
+@mediat screen and (min-width: 1174px) {
+#content {
+	width: 962px;
+	margin: 0 auto;
+	display: block;
+}
+}
+	
+	@media screen and (max-width: 1174px) {
+		#content {
+			margin-left: 0px;
+			width: 962px;
+			margin: 0 auto;
+		}
+	}
+
+.fun_box {
+	width: 962px;
+	box-sizing: border-box;
+	border: solid black 1px;
+	margin: auto;
 }
 
 .item {
