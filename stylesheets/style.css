@@ -277,12 +277,13 @@ textarea {
   text-decoration: none; }
   .fatface a:link,
   .fatface a:visited,
-  .fatface a:hover,
   .fatface a:active,
   .fatface a:focus,
   .fatface a:visited {
     color: #082419;
     text-decoration: none; }
+  .fatface a:hover {
+    color: #E29977; }
 
 .inner-nav {
   display: block; }
@@ -563,6 +564,11 @@ article.portfolio-item {
   .post-preview h2 a:visited {
     text-decoration: none;
     color: #231F20; }
+  .post-preview .work-pic {
+    float: right;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px; }
 
 img {
   width: 100%; }
@@ -586,10 +592,10 @@ body {
   font-style: normal;
   font-weight: 400; }
 
-h1 {
+h1 .title-inner {
   font-family: "futura-pt",sans-serif;
-  font-size: 2.75em;
-  color: #4A4A4A;
+  font-size: 1.2em;
+  color: #231F20;
   line-height: 60px;
   font-weight: 500;
   font-style: normal; }
@@ -597,14 +603,17 @@ h1 {
 h2 {
   font-family: "futura-pt",sans-serif;
   font-size: 1.5em;
-  color: #4A4A4A;
+  color: #121212;
   line-height: 44px;
   font-weight: 500;
   font-style: regular; }
 
+.portfolio-item h2 {
+  letter-spacing: 2px; }
+
 p {
   font-size: 1.4em;
-  color: #4A4A4A;
+  color: #121212;
   line-height: 1.3em;
   font-family: "brandon-grotesque",sans-serif;
   font-style: normal;
@@ -613,7 +622,14 @@ p {
     p {
       font-size: 1.2em; } }
   p strong {
-    color: #231F20; }
+    color: #231F20;
+    font-family: "futura-pt",sans-serif;
+    font-size: 1em;
+    line-height: 44px;
+    font-weight: 500;
+    font-style: regular;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
 
 .side_blurb {
   padding-left: 10%;
