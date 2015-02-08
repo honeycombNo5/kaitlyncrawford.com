@@ -726,6 +726,9 @@ font-weight: 400;
 		font-size: 1.2em;
 		//line-height: 1em;
 	}
+	strong {
+		color: #231F20;
+	}
 }
 
 
@@ -1071,121 +1074,6 @@ td { vertical-align: top; }
 
 
 //==========================MASONRY=======================================//
-
-@media screen and (max-width: 1175px) {
-
-.fun-nav-main {
-	width: 100%;
-	/*border: 1px solid black;*/
-}
-
-.inner-nav {
-	min-width: 160px;
-	//margin-top: 50px;
-	display: block;
-	overflow: hidden;
-	/*width: 100%;*/
-	text-align: center;
-	
-
-}
-
-.inner-nav ul {
-	margin: auto;
-	padding: 0 0 0 0px;
-}
-.menu-pages li {
-	display: inline-block;
-	margin: 0 1% 0 1%;
-	padding: 0 0 0 0px;
-	font-size: 1.5em;
-	line-height: .95em;
-	font-family: 'Abril Fatface', cursive;
-	color: #231F20;
-
-}
-
-.menu-pages li a:visited {
-	text-decoration: none;
-	color: #231F20;
-}
-
-}
-
-
-@media screen and (min-width: 1175px) {
-	.fun-nav-main {
-  width: 12.29947%;
-  float: left;
-  display: block;
-  margin-right: 1.1%;
-	margin-left: 1%;
-  /*border: 1px solid black;*/
-
-}
-
-/*to position nav items*/
-.inner-nav {
-	min-width: 140px;
-	//margin-top: 185px;
-	display: block;
-	overflow: hidden;
-	width: 100%;
-}
-  .menu-pages li {
-	text-align: right;
-	font-size: 2.75em;
-	line-height: .85em;
-	font-family: 'Abril Fatface', cursive;
-	position: relative;
-	padding-right: 4%;
-	color: #231F20;
-	margin-left: -50px;
-}
-
-.menu-pages li a:visited {
-	text-decoration: none;
-	color: #231F20;
-}
-}
-
-
-
-.menu-pages {
-	list-style-type: none;
-}
-
-
-
-.menu-pages li a {
-	text-decoration: none;
-}
-
-/*============================MAIN CONTENT SECTION=============================*/
-
-@media screen and (max-width: 1175px) {
-.fun-content-main {
-  width: 100%;
-  float: left;
-  /*margin-right: 1.17%;*/
-  /*border-left: solid 2px #D8D8D8;*/
-  /*box-sizing: border-box;*/
-}
-}
-
-
-@media screen and (min-width: 1175px) {
-.fun-content-main {
-  width: 83.3749995%;
-  float: left;
-  /*margin-right: 1.17%;*/
-  /*border-left: solid 2px #D8D8D8;*/
-  border-left: 3px solid #D8D8D8;
-  border-right: 3px solid #D8D8D8;
-  /*box-sizing: border-box;*/
-  margin: auto;
-}
-}
 
 
 

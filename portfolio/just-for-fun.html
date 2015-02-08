@@ -12,11 +12,130 @@
         <link rel="stylesheet" href="css/normalize.css">
          <style>
             
-            @media(max-width: 1150px) {
-                .wrapper .nav-main {
-                    width: 100%;
-                }           
-            }
+            @media screen and (max-width: 1175px) {
+
+.fun-nav-main {
+  width: 100%;
+  /*border: 1px solid black;*/
+}
+
+.inner-nav-fun {
+  min-width: 160px;
+  display: block;
+  overflow: hidden;
+  /*width: 100%;*/
+  text-align: center;
+  margin-top: 30px;
+  
+
+}
+
+.inner-nav-fun ul {
+  margin: auto;
+  padding: 0 0 0 0px;
+}
+
+
+.inner-nav-fun ul li {
+  display: inline-block;
+  margin: 0 5% 0 5%;
+  padding: 0 0 0 0px;
+  font-size: 1.5em;
+  line-height: .95em;
+  font-family: 'Abril Fatface', cursive;
+  color: #231F20;
+
+}
+
+}
+
+
+@media screen and (min-width: 1175px) {
+  .fun-nav-main {
+  width: 12.29947%;
+  float: left;
+  display: block;
+  margin-right: 1.1%;
+  margin-left: 1%;
+  /*border: 1px solid black;*/
+
+}
+
+/*to position nav items*/
+.inner-nav-fun {
+  min-width: 140px;
+  margin-top: 150px;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+  .inner-nav-fun ul li {
+  text-align: right;
+  font-size: 2em;
+  line-height: 1em;
+  font-family: 'Abril Fatface', cursive;
+  position: relative;
+  margin-right: 1%;
+  color: #231F20;
+  margin-left: -50px;
+  margin-bottom: 2px;
+  display: block;
+}
+
+/*margin-top: 2px;
+        margin-bottom: 2px;
+        margin-left: -50px;
+        display: block;
+        font-size: 2em;
+        line-height: 1em;
+        position: relative;
+        margin-right: -1%;*/
+
+
+}
+
+.inner-nav-fun ul li a:visited,
+.inner-nav-fun ul li a:active,
+.inner-nav-fun ul li a,
+.inner-nav-fun ul li a:hover
+ {
+  text-decoration: none;
+  color: #231F20;
+}
+
+@media screen and (min-width: 1212px) {
+  .inner-nav-fun ul li {
+  font-size: 2.3em; }
+}
+/*============================MAIN CONTENT SECTION=============================*/
+
+@media screen and (max-width: 1175px) {
+.fun-content-main {
+  width: 100%;
+  float: left;
+  padding-left: 20px;
+  margin-top: 15px; 
+  /*margin-right: 1.17%;*/
+  /*border-left: solid 2px #D8D8D8;*/
+  /*box-sizing: border-box;*/
+}
+}
+
+
+@media screen and (min-width: 1175px) {
+.fun-content-main {
+  width: 83.3749995%;
+  float: left;
+  /*margin-right: 1.17%;*/
+  /*border-left: solid 2px #D8D8D8;*/
+  border-left: 3px solid #D8D8D8;
+  border-right: 3px solid #D8D8D8;
+  /*box-sizing: border-box;*/
+  margin: auto;
+}
+}
+
+
         </style>
         <link rel="stylesheet" href="../stylesheets/style.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
