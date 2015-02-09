@@ -323,12 +323,12 @@ textarea {
 	font-size: 2.75em;
 	line-height: .8em;
 	font-family: 'Abril Fatface', cursive;
-	color:#082419;
+	color:#1C112B ;
 	@include media($mobile) {
 		font-size: 1.75em;
 	}
 
-}
+}     
 
 .fatface {
 	text-decoration: none;
@@ -341,7 +341,7 @@ textarea {
 	text-decoration: none;
 	}
 	a:hover {
-		color: #E29977;
+		color: #C6DDD6;
 	}
 }
 
@@ -404,12 +404,15 @@ textarea {
 	text-decoration: none;
 				a:link,
 				a:visited,
-				a:hover,
-				a:active,
 				a:focus,
 				a:visited {
 					color: #082419;
 					text-decoration: none;
+				}
+
+				a:hover,
+				a:active {
+					color: #E19093;
 				}
 			}
 
@@ -456,7 +459,7 @@ article.portfolio-item {
    			font-weight: 400;
    			font-size: 1.2em;
    			font-style: italic; 
-   			color: #072318;
+   			color: #121212;
    			@include shift(-.25);
    			@include media($medium) {
    				width: 100%;
@@ -487,28 +490,23 @@ article.portfolio-item {
 //ABOUT
 
 .about {
-	p,
-	h3 {
-		width: 80%;
-		margin-left: 10%;
-		margin-right: 10%;
-			@include media($mobile) {
-				width: 100%;
-				margin-left: 0%;
-				margin-right: 0%;
+		p,
+		h3 {
+			width: 80%;
+			margin-left: 10%;
+			margin-right: 10%;
+				@include media($mobile) {
+					width: 100%;
+					margin-left: 0%;
+					margin-right: 0%;
+				}
 			}
-	}
-	img {
-		// width: 80%;
-		// margin-left: 10%;
-		// margin-right: 10%;
-		// 	@include media($mobile) {
-				width: 100%;
-				margin-left: 0%;
-				margin-right: 0%;
-			// }
-	}
-}
+		img {
+			width: 100%;
+			margin-left: 0%;
+			margin-right: 0%;
+			}
+		}
 .side_blurb.about {
 	margin-top: 50px;
 	@include media($non-desktop) {
@@ -518,11 +516,23 @@ article.portfolio-item {
 		max-width: 43px;
 	}
 }
-//Contact
 
+p span .stronger {
+		color: #231F20;
+		font-family: "futura-pt",sans-serif;
+		font-size: 1em;
+		font-weight: 700px;
+		font-style: regular;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+}
+
+//Contact
 #contact {
 	text-align: center;
 	margin-top: 20%;
+	
+
 	a:first-child,
 	a:first-child:hover,
 	a:first-child:active,
@@ -530,15 +540,19 @@ article.portfolio-item {
 		color: #4A4A4A;
 	}
 	p.social {
-		a,
-		a:hover,
+		a:link,
 		a:visited,
 		a:active {
 			color: #4A4A4A;
 			text-decoration: none;
 		}
+
+		a:hover {
+			color: #C6DDD6;
+		}
 	}
 }
+
 article.blog-post {
 	@include outer-container;
 .date {
@@ -585,7 +599,8 @@ article.blog-post {
 	width: 70.38%;
 	margin: auto;
 	@include media($medium) {
-		width: 90%}
+		width: 90%;
+	}
 	p {
 		margin-top: 18px;
 		margin-bottom: 18px;
@@ -638,7 +653,7 @@ article.portfolio-item {
 	//margin-bottom: 10px;
 	margin-right: 2%;
 	margin-left: 2%;
-	border-bottom: solid black 1px;
+	border-bottom: solid #D8D8D8 1px;
 		p {
 			font-size: 1.2em;
 		}
@@ -652,19 +667,23 @@ article.portfolio-item {
 		
 		h2 a:link,
 		h2 a:visited,
-		h2 a:hover,
 		h2 a:active,
 		h2 a:focus,
 		h2 a:visited {
 			text-decoration: none;
 			color: #231F20;
 		}
+		h2 a:hover {
+			color: #C6DDD6;
+		}
+
 		.work-pic {
 			float: right;
 			width: 200px;
 			height: 150px;
 			// border: solid black 1px;
 			margin-top: 10px;
+			// margin-bottom: 10px;
 		}
 	}
 		
@@ -683,14 +702,15 @@ article.portfolio-item {
 	a,
 	a:link,
 	a:visited,
-	a:hover,
 	a:active,
 	a:focus,
 	a:visited {
 			color: #082419;
 	text-decoration: none;
 	}
-
+	a:hover {
+		color: #C6DDD6;
+	}
 }
 
 //==========================ABOUT============================//
@@ -745,19 +765,17 @@ font-weight: 400;
 		font-size: 1.2em;
 		//line-height: 1em;
 	}
-	strong {
-		color: #231F20;
-		font-family: "futura-pt",sans-serif;
-	font-size: 1em;
-	// color: #4A4A4A;
-	line-height: 44px;
-	font-weight: 500;
-	font-style: regular;
-	text-transform: uppercase;
-			letter-spacing: 2px;
-	}
+strong {
+	font-family: "brandon-grotesque",sans-serif;
+	font-style: normal;
+	font-weight: 700px;
+
 }
 
+}
+
+
+	
 
 .side_blurb {
 	padding-left: 10%;
@@ -770,7 +788,7 @@ font-weight: 400;
 	}
 }
 
-
+.resume,
 .post-body,
 .post-tile h2,
 .side_blurb,
@@ -779,7 +797,6 @@ font-weight: 400;
 	a,
 	a:link,
 	a:visited,
-	a:hover,
 	a:active,
 	a:focus,
 	a:visited {
@@ -792,6 +809,9 @@ font-weight: 400;
 			font-style: regular !important; 
 			font-size: 1em;
 			}
+	a:hover {
+		color: #C5DCD5;
+	}
 }
 
 
