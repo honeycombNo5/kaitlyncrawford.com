@@ -95,39 +95,47 @@ textarea {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (min-width: 985px) {
-    .wrapper .nav-main {
-      float: left;
-      display: block;
-      margin-right: 2.6738%;
-      width: 12.29947%;
-      margin-right: 1.1%;
-      margin-left: 1%; }
-      .wrapper .nav-main:last-child {
-        margin-right: 0; } }
-  @media screen and (max-width: 985px) {
-    .wrapper .content-main {
-      margin: 0 3% 0 3%; } }
-  @media screen and (min-width: 985px) {
-    .wrapper .content-main {
-      float: left;
-      display: block;
-      margin-right: 2.6738%;
-      width: 76.47059%;
-      border-left: 1px solid #D8D8D8;
-      border-right: 1px solid #D8D8D8;
-      padding: 0 .75% 0 .75%;
-      margin-right: 0%; }
-      .wrapper .content-main:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 985px) {
-    .wrapper .nav-selection {
-      float: left;
-      display: block;
-      margin-right: 2.6738%;
-      width: 5.88235%; }
-      .wrapper .nav-selection:last-child {
-        margin-right: 0; } }
+  .wrapper .nav-main {
+    border: solid black 1px; }
+    @media screen and (min-width: 985px) {
+      .wrapper .nav-main {
+        float: left;
+        display: block;
+        margin-right: 2.6738%;
+        width: 12.29947%;
+        margin-right: 1.1%;
+        margin-left: 1%; }
+        .wrapper .nav-main:last-child {
+          margin-right: 0; } }
+  .wrapper .content-main {
+    border: solid black 1px;
+    box-sizing: border-box; }
+    @media screen and (max-width: 985px) {
+      .wrapper .content-main {
+        margin: 0 3% 0 3%; } }
+    @media screen and (min-width: 985px) {
+      .wrapper .content-main {
+        float: left;
+        display: block;
+        margin-right: 2.6738%;
+        width: 76.47059%;
+        border-left: 1px solid #D8D8D8;
+        border-right: 1px solid #D8D8D8;
+        padding: 0 .75% 0 .75%;
+        margin-right: 0%; }
+        .wrapper .content-main:last-child {
+          margin-right: 0; } }
+    .wrapper .content-main .nav-selection {
+      border: solid black 1px; }
+      @media screen and (min-width: 985px) {
+        .wrapper .content-main .nav-selection {
+          float: left;
+          display: block;
+          margin-right: 2.6738%;
+          width: 5.88235%;
+          margin-right: 0; }
+          .wrapper .content-main .nav-selection:last-child {
+            margin-right: 0; } }
 
 .homepage {
   background-color: #CB8672; }

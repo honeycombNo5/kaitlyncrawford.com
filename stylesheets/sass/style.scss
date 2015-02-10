@@ -112,22 +112,31 @@ textarea {
 
 //RESPONSIVE BASE GRID
 
+
+
 .wrapper {
 	@include outer-container;
+
+	// 	header {
+	// 		@include span-columns(12);
+	// 		height: 185px;
 	
+	// }
+
 	.nav-main {
+		border: solid black 1px;
 		@include media($desktop) {
 			@include span-columns(1.75);
 			margin-right: 1.1%;
 			margin-left: 1%;
 		}
 		@include media($desktopxl) {
-
-
 		}
 	}
 
 	.content-main {
+		border: solid black 1px;
+		box-sizing: border-box;
 		@include media($non-desktop) {
 			margin: 0 3% 0 3%;
 		}
@@ -137,18 +146,24 @@ textarea {
   			border-right: 1px solid #D8D8D8;
   			padding: 0 .75% 0 .75%;
   			margin-right: 0%;
-  			
+  			// @include reset-display;
 		}
-	}
+	
 
 	.nav-selection {
+		border: solid black 1px;
+		@include reset-display;
+		
 		@include media($desktop) {
 			@include span-columns(1);
+			 @include omega();
+			@include reset-display;
 			// padding-right: 1%;
 			
 			
 		}
 	}
+}
 }
 
 //HOMEPAGE
