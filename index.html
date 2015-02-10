@@ -6,47 +6,167 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <script src="//use.typekit.net/gkv3dap.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+<style>
+        @media screen and (max-width: 985px) {
+
+.home-nav-main .inner-nav-fun ul li {
+  color: white;
+}
+
+.fun-nav-main {
+  width: 100%;
+  /*border: 1px solid black;*/
+}
+
+.inner-nav-fun {
+  min-width: 160px;
+  display: block;
+  overflow: hidden;
+  /*width: 100%;*/
+  text-align: center;
+  margin-top: 30px;
+  
+
+}
+
+.inner-nav-fun ul {
+  margin: auto;
+  padding: 0 0 0 0px;
+}
+
+
+
+
+ .inner-nav-fun ul li a:visited, 
+ .inner-nav-fun ul li a:active, 
+ .inner-nav-fun ul li a, 
+ .inner-nav-fun ul li a:hover {
+text-decoration: none ;
+color: white !important;
+
+
+}
+
+}
+
+ @media screen and (max-width: 550px) {
+              .inner-nav-fun ul li {
+                margin: 0 3% 0 3%;
+                font-size: 1.1em;
+              }
+            }
+
+
+@media screen and (min-width: 985px) {
+  .home-nav-main {
+  width: 12.29947%;
+  float: left;
+  display: block;
+  margin-right: .7%;
+  margin-left: 1%;
+  /*border: 1px solid black;*/
+
+}
+
+/*to position nav items*/
+.inner-nav-fun {
+  min-width: 140px;
+  margin-top: 134px;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+  .inner-nav-fun ul li {
+  text-align: right;
+  font-size: 2em;
+  line-height: 1em;
+  font-family: 'Abril Fatface', cursive;
+  position: relative;
+  margin-right: 1%;
+  color: #231F20;
+  margin-left: -50px;
+  margin-bottom: 2px;
+  display: block;
+}
+
+/*margin-top: 2px;
+        margin-bottom: 2px;
+        margin-left: -50px;
+        display: block;
+        font-size: 2em;
+        line-height: 1em;
+        position: relative;
+        margin-right: -1%;*/
+
+
+}
+
+.inner-nav-fun ul li a:visited,
+.inner-nav-fun ul li a:active,
+.inner-nav-fun ul li a,
+.inner-nav-fun ul li a:hover
+ {
+  text-decoration: none;
+  color: #231F20;
+}
+
+@media screen and (min-width: 1245px) {
+  .inner-nav-fun ul li {
+  font-size: 2.3em; }
+}
+</style>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="../stylesheets/style.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body class="homepage">
+    <body style="background-color:
+    #EEC9CC">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
 
-<div class="header container">
-            <div class="logo fatface"><a href="{{site.url}}">Kaitlyn<br>Crawford</a></div>
-            <div class="work fatface"><a href="/portfolio">work</a></div>
-        </div>
-        <div class="footer container">
-            <div class="info fatface"><a href="/about">about</a></div>
-            <div class="blog fatface"><a href="/contact">contact</a></div>
-        </div>
-      <!--   </div> -->
-        <div class="main">
-            <img class="shape_one" src="/images/shape_one.png" alt="">
-            <img class="shape_two" src="/images/shape_two.png" alt="">
-            <img class="shape_three" src="/images/shape_three.png" alt="">
-            <img class="shape_four" src="/images/shape_four.png" alt="">
-            <img class="shape_five" src="/images/shape_five.png" alt="">
-            <img class="shape_six" src="/images/shape_six.png" alt="">
-            <img class="shape_seven" src="/images/shape_seven.png" alt="">
-            <img class="shape_eight" src="/images/shape_eight.png" alt="">
-            <img class="shape_nine" src="/images/shape_nine.png" alt="">
-            <img class="shape_ten" src="/images/shape_ten.png" alt="">
-            <img class="shape_eleven" src="/images/shape_eleven.png" alt="">
-        </div>
+<header>
+
+    <div class="homelogo"><h1 class="fatface">Kaitlyn Crawford</h1></div>
+
+</header>
+<div class="clearfix">
+    
+      
+      <div class="home-nav-main">
         
-        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <div class="home-inner-nav">
+           <ul>
+                {% for page in site.pages %}
+                    <li >
+                        <a href="{{page.url}}"{% if page.url == url %} class="is-current-page style="color: white;"{% endif %}>
+                          {{page.title}}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+      </div>
+
+      <div class="art_spot">
+      <div class="depner_art"><img src="../images/jeff_depner.png" alt=""></div>
+      </div>
+    </div>
+      
+    
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/script.js"></script>-->
+       <script src="js/jquery.masonry.min.js"></script>
+        <script src="js/script.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

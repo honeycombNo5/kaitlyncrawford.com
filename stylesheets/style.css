@@ -89,16 +89,19 @@ textarea {
    ========================================================================== */
 header {
   width: 100%;
-  height: 150px;
-  border-bottom: 1px solid #D8D8D8;
+  height: 130px;
   display: block;
   position: relative;
   float: left; }
+  @media screen and (min-width: 985px) {
+    header {
+      height: 125px;
+      border-bottom: 3px solid #D8D8D8; } }
   @media screen and (max-width: 985px) {
     header {
-      height: 125px; } }
+      height: 125px;
+      border-bottom: 0px; } }
   header div.logo {
-    border: 1px solid #D8D8D8;
     margin: 0 auto;
     width: 100%;
     bottom: 5px;
@@ -107,8 +110,17 @@ header {
     header div.logo h1 {
       width: 100%;
       text-align: center;
-      margin-bottom: 10px;
-      display: block; }
+      margin-bottom: 0px;
+      display: block;
+      z-indez: 2;
+      color: #082419; }
+    header div.logo .symbolset {
+      border: solid black 1px;
+      z-index: 1;
+      bottom: 5px;
+      right: 5px;
+      display: block;
+      position: relative; }
 
 .wrapper {
   max-width: 1300px;
@@ -152,140 +164,116 @@ header {
       .wrapper .nav-selection:last-child {
         margin-right: 0; } }
 
-.homepage {
-  background-color: #CB8672; }
-
-.main {
-  bottom: 3.5em;
-  left: 10%;
-  position: absolute;
-  right: 10%;
-  top: 5em;
-  z-index: 1;
-  max-width: 875px;
-  margin: auto; }
-  .main img.shape_one {
-    width: 41.169%;
-    height: 92.875%;
-    position: absolute;
-    top: 3.75%;
-    left: 0%;
-    z-index: 12; }
-  .main img.shape_two {
-    width: 40.53367%;
-    height: 60.125%;
-    left: 21.34689%;
-    top: 0.75%;
-    position: absolute;
-    z-index: 11; }
-  .main img.shape_three {
-    width: 41.169%;
-    height: 60.625%;
-    position: absolute;
-    right: 0%;
-    top: 1.125%;
-    z-index: 10; }
-  .main img.shape_four {
-    width: 40.40661%;
-    height: 60%;
-    position: absolute;
-    left: 0%;
-    bottom: 0%;
-    z-index: 9; }
-  .main img.shape_five {
-    width: 40.40661%;
-    height: 59.875%;
-    position: absolute;
-    top: 0.75%;
-    left: 0.88945%;
-    z-index: 8; }
-  .main img.shape_six {
-    width: 40.40661%;
-    height: 60%;
-    position: absolute;
-    bottom: 0.75%;
-    left: 22.10928%;
-    z-index: 7; }
-  .main img.shape_seven {
-    width: 40.40661%;
-    height: 60%;
-    position: absolute;
-    top: 0.875%;
-    right: 19.18679%;
-    z-index: 6; }
-  .main img.shape_eight {
-    width: 40.40661%;
-    height: 59.875%;
-    position: absolute;
-    top: 0%;
-    right: 0.88945%;
-    z-index: 5; }
-  .main img.shape_nine {
-    width: 40.40661%;
-    height: 59.875%;
-    position: absolute;
-    bottom: 0.375%;
-    right: 18.0432%;
-    z-index: 4; }
-  .main img.shape_ten {
-    width: 40.40661%;
-    height: 60%;
-    position: absolute;
-    right: 0.63532%;
-    bottom: 3.125%;
-    z-index: 3; }
-  .main img.shape_eleven {
-    width: 40.40661%;
-    height: 60%;
-    position: absolute;
-    bottom: 3.125%;
-    right: 0.25413%;
-    z-index: 2; }
-  .main img:hover {
-    opacity: 0.8;
-    filter: alpha(opacity=100);
-    /* For IE8 and earlier */ }
-
-.main img {
+header {
   width: 100%;
-  height: 100%;
-  max-width: 900px;
+  height: 130px;
+  border-bottom: 3px solid #979797;
+  display: block;
   position: relative;
-  margin: auto;
+  float: left; }
+  @media screen and (max-width: 985px) {
+    header {
+      height: 125px; } }
+  header div.homelogo {
+    border: 1px solid #D8D8D8;
+    margin: 0 auto;
+    width: 100%;
+    bottom: -10px;
+    display: block;
+    position: absolute; }
+    header div.homelogo h1 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0px;
+      display: block;
+      z-indez: 2;
+      color: white;
+      font-size: 3.5em; }
+    header div.homelogo .symbolset {
+      border: solid black 1px;
+      z-index: 1;
+      bottom: 5px;
+      right: 5px;
+      display: block;
+      position: relative; }
+
+.home-inner-nav {
+  display: block; }
+  @media screen and (max-width: 985px) {
+    .home-inner-nav {
+      border-bottom: 1px solid #D8D8D8; } }
+  @media screen and (min-width: 985px) {
+    .home-inner-nav {
+      text-align: right;
+      margin-top: 50px; } }
+  .home-inner-nav ul {
+    position: relative; }
+    @media screen and (max-width: 985px) {
+      .home-inner-nav ul {
+        text-align: center;
+        padding: 0 0 0 0px;
+        margin: 0 0 0 0px; } }
+    .home-inner-nav ul li {
+      color: white;
+      display: inline-block;
+      margin: 10px 3% 0px 3%;
+      font-size: 1.5em;
+      line-height: .95em;
+      font-family: 'Abril Fatface', cursive; }
+      @media screen and (max-width: 550px) {
+        .home-inner-nav ul li {
+          font-size: 1.1em;
+          margin: 30px 3% 0 3%;
+          color: white; } }
+      @media screen and (min-width: 985px) {
+        .home-inner-nav ul li {
+          margin-top: 2px;
+          margin-bottom: 2px;
+          margin-left: -50px;
+          display: block;
+          font-size: 2em;
+          line-height: 1em;
+          position: relative;
+          margin-right: -1%; } }
+      @media screen and (min-width: 1212px) {
+        .home-inner-nav ul li {
+          font-size: 2.3em;
+          margin-left: -50px;
+          margin-right: -1%; } }
+
+.home-inner-nav ul li {
+  text-decoration: none; }
+  .home-inner-nav ul li a:link,
+  .home-inner-nav ul li a:visited,
+  .home-inner-nav ul li a:focus,
+  .home-inner-nav ul li a:visited {
+    color: white;
+    text-decoration: none; }
+  .home-inner-nav ul li a:hover,
+  .home-inner-nav ul li a:active {
+    color: white; }
+
+.post-nav ul {
   display: block;
-  z-index: 2; }
+  text-align: center; }
+  @media screen and (min-width: 985px) {
+    .post-nav ul {
+      margin-top: 250px; } }
+  .post-nav ul li {
+    list-style-type: none; }
+    .post-nav ul li img {
+      max-width: 35px; }
 
-.footer {
-  left: 35px;
-  right: 35px;
-  display: block;
-  position: fixed;
-  width: auto;
-  bottom: 25px;
-  border-bottom: solid 1px #082419;
-  padding-bottom: 10px;
-  z-index: 13; }
+.art_spot {
+  width: 85.99999%;
+  border-left: 3px solid #979797;
+  float: left; }
+  @media screen and (max-width: 985px) {
+    .art_spot {
+      width: 100%; } }
 
-.header {
-  left: 35px;
-  right: 35px;
-  display: block;
-  position: fixed;
-  width: auto;
-  top: 25px;
-  padding-top: 10px;
-  border-top: solid 1px #082419;
-  z-index: 14; }
-
-.logo,
-.info {
-  float: left;
-  z-index: 15; }
-
-.work,
-.blog {
-  float: right;
-  z-index: 16; }
+.depner_art img {
+  with: 100%; }
 
 .fatface {
   font-weight: normal;
@@ -316,7 +304,7 @@ header {
   @media screen and (min-width: 985px) {
     .inner-nav {
       text-align: right;
-      margin-top: 150px; } }
+      margin-top: 50px; } }
   .inner-nav ul {
     position: relative; }
     @media screen and (max-width: 985px) {
@@ -436,6 +424,42 @@ article.portfolio-item {
         margin-left: -57.55396%; }
         article.portfolio-item img:last-child {
           margin-right: 0; } }
+
+article.portfolio-sabf {
+  float: left;
+  display: block;
+  margin-right: 3.59712%;
+  width: 100%; }
+  article.portfolio-sabf:last-child {
+    margin-right: 0; }
+  article.portfolio-sabf p:first-child {
+    float: left;
+    display: block;
+    margin-right: 3.59712%;
+    width: 100%;
+    font-family: "futura-pt",sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    font-style: italic;
+    padding-left: 3%;
+    color: #121212;
+    margin-left: -2.8777%; }
+    article.portfolio-sabf p:first-child:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 800px) {
+      article.portfolio-sabf p:first-child {
+        width: 100%;
+        margin: auto; } }
+    @media screen and (max-width: 550px) {
+      article.portfolio-sabf p:first-child {
+        margin: 10px 0 10px 0; } }
+  article.portfolio-sabf img {
+    width: 50%;
+    float: left; }
+  article.portfolio-sabf p,
+  article.portfolio-sabf h2,
+  article.portfolio-sabf blockquote {
+    width: 100%; }
 
 .about p,
 .about h3 {
@@ -659,7 +683,8 @@ p {
   font-weight: 400; }
   @media screen and (max-width: 550px) {
     p {
-      font-size: 1.2em; } }
+      font-size: 1.2em;
+      margin-bottom: 5px; } }
   p strong {
     font-family: "brandon-grotesque",sans-serif;
     font-style: normal;
@@ -668,6 +693,9 @@ p {
 .side_blurb {
   padding-left: 10%;
   padding-right: 10%; }
+  @media screen and (min-width: 985px) {
+    .side_blurb {
+      margin-top: 50px; } }
   @media screen and (max-width: 985px) {
     .side_blurb {
       text-align: center; } }
