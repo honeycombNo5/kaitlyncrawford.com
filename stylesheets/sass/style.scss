@@ -128,7 +128,7 @@ header {
 
 	 		@include media($non-desktop) {
 	 		height: 125px;
-			border-bottom: 0px;
+			border-bottom: 0px solid white;
 	 	}
 
 	 		div.logo {
@@ -725,8 +725,14 @@ article.portfolio-sabf {
    			}
 		}
 		img {
-			width: 50%;
+			width: 49%;
+			margin-right: 1%;
 			float: left; 
+			@include media($non-desktop) {
+				width: 75%;
+				margin: 0 12.5% 0 12.5%;
+			}
+
 			}
 			// @include media($mid) {
 			// 	// @include span-columns(9 of 9);
