@@ -1,0 +1,22 @@
+
+{% capture content %}
+    <h1 class="work-title">
+        <div class="title-inner">{{ title }}</div>
+    </h1>
+    <article class="portfolio-sabf">
+        <div class="sabf_pics">
+                {{ body }}
+        </div>
+    </article>
+{% endcapture %}
+
+{% capture sidebar_content %}
+    <nav class="post-nav">
+    	<ul>
+       <li> {% if previous %}<a href="{{ current.previous.url }}"><img src="/images/forward_arrow.png" alt=""></a>{% endif %}</li>
+        <li>{% if next %}<a href="{{ current.next.url }}"><img src="/images/back_arrow.png" alt=""></a>{% endif %}</li>
+        </ul>
+    </nav>
+{% endcapture %}
+
+{% include 'layouts/default' %}
