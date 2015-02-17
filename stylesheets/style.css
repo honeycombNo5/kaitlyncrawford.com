@@ -88,10 +88,25 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .symbolset {
-  right: 50px;
+  right: 2.5%;
   position: absolute;
-  top: 0px;
+  bottom: -10px;
   z-index: 3; }
+  @media screen and (max-width: 985px) {
+    .symbolset {
+      top: 5px; } }
+  .symbolset li {
+    display: inline;
+    margin: 0 1px; }
+    .symbolset li a:link,
+    .symbolset li a:visited,
+    .symbolset li a:active,
+    .symbolset li a:focus,
+    .symbolset li a:visited {
+      color: #082419;
+      text-decoration: none; }
+    .symbolset li a:hover {
+      color: #C6DDD6; }
 
 header {
   width: 100%;
@@ -173,6 +188,11 @@ header.homepage {
   @media screen and (max-width: 985px) {
     header.homepage {
       height: 125px; } }
+  @media screen and (max-width: 985px) and (max-width: 985px) {
+    header.homepage {
+      height: 125px;
+      border-bottom: 0px solid white; } }
+
   header.homepage div.homelogo {
     margin: 0 auto;
     width: 100%;
@@ -187,6 +207,9 @@ header.homepage {
       z-indez: 2;
       color: white;
       font-size: 3.4em; }
+      @media screen and (max-width: 550px) {
+        header.homepage div.homelogo h1 {
+          font-size: 1.75em; } }
     header.homepage div.homelogo a {
       color: white; }
     header.homepage div.homelogo .symbolset {
@@ -351,7 +374,7 @@ header.homepage {
     text-decoration: none; }
   .inner-nav ul li a:hover,
   .inner-nav ul li a:active {
-    color: #E19093; }
+    color: #C6DDD6; }
 
 .post-nav ul {
   display: block;
@@ -443,6 +466,7 @@ article.portfolio-sabf {
     font-style: italic;
     padding-left: 3%;
     color: #121212;
+    margin-top: -10px;
     margin-left: -2.8777%; }
     article.portfolio-sabf p:first-child:last-child {
       margin-right: 0; }
@@ -452,15 +476,19 @@ article.portfolio-sabf {
         margin: auto; } }
     @media screen and (max-width: 550px) {
       article.portfolio-sabf p:first-child {
-        margin: 10px 0 10px 0; } }
+        margin: 0px 0 10px 0; } }
+  article.portfolio-sabf p {
+    margin: 10px 2px; }
   article.portfolio-sabf img {
     width: 49%;
     margin-right: 1%;
     float: left; }
-    @media screen and (max-width: 985px) {
+    @media screen and (max-width: 1175px) {
       article.portfolio-sabf img {
         width: 75%;
         margin: 0 12.5% 0 12.5%; } }
+    article.portfolio-sabf img h2 {
+      clear: boths; }
   article.portfolio-sabf p,
   article.portfolio-sabf h2,
   article.portfolio-sabf blockquote {

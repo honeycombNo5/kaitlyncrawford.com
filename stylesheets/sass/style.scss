@@ -9,6 +9,7 @@ $mobile: new-breakpoint(max-width 550px);
 $medium: new-breakpoint(max-width 800px);
 $mid: new-breakpoint(min-width 800px);
 $non-desktop: new-breakpoint(max-width 985px);
+$sabf-small: new-breakpoint(max-width 1175px);
 $desktop: new-breakpoint(min-width 985px);
 $desktopxl: new-breakpoint(min-width 1212px);
 
@@ -114,11 +115,36 @@ textarea {
 
 .symbolset {
 	 		// bwidth: 10%;
-			right: 50px;
+			right: 2.5%;
 			position: absolute;
-			top: 0px;
+			bottom: -10px;
 			z-index: 3;
+							@include media($non-desktop) {
+			top: 5px;
+		}
+	 	
+
+	 	ul {
+
 	 	}
+		li {
+			display: inline;
+			margin: 0 1px;
+			a:link,
+			a:visited,
+			a:active,
+			a:focus,
+			a:visited {
+					color: #082419;
+			text-decoration: none;
+			}
+			a:hover {
+				color: #C6DDD6;
+			}
+
+			
+		}
+	}
 
 header {
 	 		width: 100%;
@@ -215,6 +241,11 @@ header.homepage {
 
 	 		@include media($non-desktop) {
 	 		height: 125px;
+
+	 				@include media($non-desktop) {
+	 		height: 125px;
+			border-bottom: 0px solid white;
+	 	}
 	 	}
 
 	 		div.homelogo {
@@ -232,6 +263,11 @@ header.homepage {
 					z-indez: 2;
 					color: white;
 					font-size: 3.4em;
+					@include media($mobile) {
+		font-size: 1.75em;
+
+
+	}
 				}
 
 					a {
@@ -245,6 +281,7 @@ header.homepage {
 					right: 5px;
 					display: block;
 					position: relative;
+
 				}
 			}
 
@@ -627,7 +664,7 @@ header.homepage {
 
 				a:hover,
 				a:active {
-					color: #E19093;
+					color: #C6DDD6;
 				}
 			}
 
@@ -718,22 +755,30 @@ article.portfolio-sabf {
    			font-style: italic; 
    			padding-left: 3%;
    			color: #121212;
+   			margin-top: -10px;
    			@include shift(-.25);
    			@include media($medium) {
    				width: 100%;
    				margin: auto;
    			}
    			@include media($mobile) {
-				margin: 10px 0 10px 0;
+				margin: 0px 0 10px 0;
    			}
+		}
+		p {
+			margin: 10px 2px;
 		}
 		img {
 			width: 49%;
 			margin-right: 1%;
 			float: left; 
-			@include media($non-desktop) {
+			@include media($sabf-small) {
 				width: 75%;
 				margin: 0 12.5% 0 12.5%;
+			}
+
+			h2 {
+			 	clear: boths;
 			}
 
 			}

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).load(function() {
   $('#content').masonry({
    columnWidth: 320,
    itemSelector: '.item'
