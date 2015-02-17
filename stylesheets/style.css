@@ -87,6 +87,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.symbolset {
+  right: 50px;
+  position: absolute;
+  top: 0px;
+  z-index: 3; }
+
 header {
   width: 100%;
   height: 130px;
@@ -96,7 +102,7 @@ header {
   @media screen and (min-width: 985px) {
     header {
       height: 125px;
-      border-bottom: 3px solid #D8D8D8; } }
+      border-bottom: 1px solid #D8D8D8; } }
   @media screen and (max-width: 985px) {
     header {
       height: 125px;
@@ -114,13 +120,6 @@ header {
       display: block;
       z-indez: 2;
       color: #082419; }
-    header div.logo .symbolset {
-      border: solid black 1px;
-      z-index: 1;
-      bottom: 5px;
-      right: 5px;
-      display: block;
-      position: relative; }
 
 .wrapper {
   max-width: 1300px;
@@ -164,32 +163,33 @@ header {
       .wrapper .nav-selection:last-child {
         margin-right: 0; } }
 
-header {
+header.homepage {
   width: 100%;
   height: 130px;
-  border-bottom: 3px solid #979797;
+  border-bottom: 1px solid #979797;
   display: block;
   position: relative;
   float: left; }
   @media screen and (max-width: 985px) {
-    header {
+    header.homepage {
       height: 125px; } }
-  header div.homelogo {
-    border: 1px solid #D8D8D8;
+  header.homepage div.homelogo {
     margin: 0 auto;
     width: 100%;
-    bottom: -10px;
+    bottom: 0px;
     display: block;
     position: absolute; }
-    header div.homelogo h1 {
+    header.homepage div.homelogo h1 {
       width: 100%;
       text-align: center;
       margin-bottom: 0px;
       display: block;
       z-indez: 2;
       color: white;
-      font-size: 3.5em; }
-    header div.homelogo .symbolset {
+      font-size: 3.4em; }
+    header.homepage div.homelogo a {
+      color: white; }
+    header.homepage div.homelogo .symbolset {
       border: solid black 1px;
       z-index: 1;
       bottom: 5px;
@@ -266,7 +266,7 @@ header {
 
 .art_spot {
   width: 85.99999%;
-  border-left: 3px solid #979797;
+  border-left: 1px solid #979797;
   float: left; }
   @media screen and (max-width: 985px) {
     .art_spot {
@@ -700,7 +700,7 @@ p {
   padding-right: 10%; }
   @media screen and (min-width: 985px) {
     .side_blurb {
-      margin-top: 50px; } }
+      margin-top: 10px; } }
   @media screen and (max-width: 985px) {
     .side_blurb {
       text-align: center; } }
@@ -1200,7 +1200,7 @@ td {
 @mediat screen and (min-width: 1174px) {
   #content {
     width: 962px;
-    margin: 0 auto;
+    margin: 0px auto;
     display: block; } }
 @media screen and (max-width: 1174px) {
   #content {
